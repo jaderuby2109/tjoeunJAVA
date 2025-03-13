@@ -1,21 +1,16 @@
-package CodeUp;
+package CodeUp.Day0312;
 
 import java.util.Scanner;
 
-// n이 입력되면 다음과 같은 삼각형을 출력하시오.
+// 길이 n이 입력되면 역삼각형을 출력한다.
 // 예)
-// n 이 5 이면
-// *
-// **
-// ***
-// ****
+// n이 5이면
 // *****
-
-// 길이 n이 입력된다.
-
-// 삼각형을 출력한다.
-public class _1353 {
-
+// ****
+// ***
+// **
+// *
+public class _1354 {
 	public static void main(String[] args) {
 		try (Scanner sc = new Scanner(System.in)) {
 
@@ -23,7 +18,7 @@ public class _1353 {
 			int num = sc.nextInt();
 
 			for (int i = 1; i <= num; i++) {
-				for (int j = 1; j <= i; j++) {
+				for (int j = num; j >= i; j--) {
 
 					System.out.print("*");
 				}

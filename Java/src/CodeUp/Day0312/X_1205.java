@@ -1,4 +1,4 @@
-package CodeUp;
+package CodeUp.Day0312;
 
 import java.util.Scanner;
 
@@ -24,14 +24,21 @@ public class X_1205 {
 			double num1 = sc.nextDouble();
 			System.out.print("값2 : ");
 			double num2 = sc.nextDouble();
-
-			max = (max < num1 + num2) ? num1 + num2 : max;
-			max = (max < num1 - num2) ? num1 - num2 : max;
-			max = (max < num1 * num2) ? num1 * num2 : max;
-			max = (max < num1 / num2) ? num1 / num2 : max;
-			max = (max < num2 / num1) ? num2 / num1 : max;
-			max = (max < Math.pow(num1, num2)) ? Math.pow(num1, num2) : max;
-			max = (max < Math.pow(num2, num1)) ? Math.pow(num2, num1) : max;
+			
+			max = (max < num1 + num2 && num1 + num2 < Integer.MAX_VALUE ) ? num1 + num2 : max;
+			System.out.println(num1 + num2);
+			max = (max < num1 - num2 && num1 - num2 < Integer.MAX_VALUE) ? num1 - num2 : max;
+			System.out.println(num1 - num2);
+			max = (max < num1 * num2 && num1 * num2 < Integer.MAX_VALUE) ? num1 * num2 : max;
+			System.out.println(num1 * num2);
+			max = (max < num1 / num2 && num1 / num2 < Integer.MAX_VALUE) ? num1 / num2 : max;
+			System.out.println(num1 / num2);
+			max = (max < num2 / num1 && num2 / num1 < Integer.MAX_VALUE) ? num2 / num1 : max;
+			System.out.println(num2 / num1);
+			max = (max < Math.pow(num2, num1) && Math.pow(num2, num1) < Integer.MAX_VALUE) ? Math.pow(num2, num1) : max;
+			System.out.println(Math.pow(num2, num1));
+			max = (max < Math.pow(num1, num2) && Math.pow(num1, num2) < Integer.MAX_VALUE) ? Math.pow(num1, num2) : max;
+			System.out.println(Math.pow(num1, num2));
 			
 			System.out.println("최대값은 " + max + "입니다.");
 

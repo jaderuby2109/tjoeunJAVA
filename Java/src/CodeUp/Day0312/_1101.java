@@ -1,4 +1,4 @@
-package CodeUp;
+package CodeUp.Day0312;
 
 // 프로그래밍 세계에 오신걸 환영합니다.
 // 첫 번째 문제는 인사말을 출력하는 문제입니다.
