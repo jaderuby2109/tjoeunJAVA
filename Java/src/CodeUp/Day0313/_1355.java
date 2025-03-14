@@ -2,36 +2,31 @@ package CodeUp.Day0313;
 
 import java.util.Scanner;
 
-//길이 n이 입력되면 다음과 같은 역삼각형을 출력한다.
-//예)
-//n이 5이면
-//*****
+// 길이 n이 입력되면 다음과 같은 역삼각형을 출력한다.
+// 예)
+// n이 5이면
+// *****
 // ****
-//  ***
-//   **
-//    *
+// ***
+// **
+// *
 public class _1355 {
-	
+
 	public static void main(String[] args) {
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			System.out.print("입력 : ");
-			int num = sc.nextInt();
+		System.out.print("입력 : ");
+		int num = sc.nextInt();
 
-			for (int i = 1; i <= num; i++) {
-				for (int j = 1; j <= num; j++) {
+		sc.close();
 
-					if (i <= j )
+		for (int i = 1; i <= num; i++) {
+			for (int j = 1; j <= num; j++) {
+
+				if (i <= j)
 					System.out.print("*");
-					else 
-						System.out.print(" ");
-				}
-				System.out.println();
 			}
-
-		} catch (Exception e) {
-			System.out.println("에러가 발생했습니다.");
+			System.out.println();
 		}
 	}
-
 }

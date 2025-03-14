@@ -12,18 +12,16 @@ import java.util.Scanner;
 public class _1156 {
 	public static void main(String[] args) {
 
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			System.out.print("정수 입력 : ");
-			int num = sc.nextInt();
-			if (num % 2 == 1)
-				System.out.println("odd");
-			else
-				System.out.println("even");
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
+		sc.close();
 
-		} catch (Exception e) {
-			System.out.println("예외발생");
-		}
+		if (num % 2 == 1)
+			System.out.println("odd");
+		else
+			System.out.println("even");
 
 	}
 }

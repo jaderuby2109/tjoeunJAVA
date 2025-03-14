@@ -4,11 +4,14 @@ import java.util.Scanner;
 
 public class Ex05_Switch {
 	public static void main(String[] args) {
-		try (Scanner sc = new Scanner(System.in)) {
-			System.out.print("채널 : ");
-			int channel = sc.nextInt();
+		Scanner sc = new Scanner(System.in);
 
-			switch (channel) {
+		System.out.print("채널 : ");
+		int channel = sc.nextInt();
+
+		sc.close();
+
+		switch (channel) {
 			case 11:
 				System.out.println("MBC - 굿데이(GD)");
 				break;
@@ -24,8 +27,6 @@ public class Ex05_Switch {
 			default:
 				System.out.println("요청하신 채널이 없습니다.");
 				break;
-			}
-		} catch (Exception e) {
 		}
 	}
 }

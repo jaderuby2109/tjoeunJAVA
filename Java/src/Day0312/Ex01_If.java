@@ -17,13 +17,13 @@ public class Ex01_If {
 		System.out.print("정수 입력 : ");
 		int num = sc.nextInt();
 
+		sc.close();
+
 		if (num % 2 == 1) {
 			System.out.println("홀수 입니다.");
 		}
 		if (num % 2 != 1) {
 			System.out.println("짝수 입니다.");
 		}
-
-		sc.close();
 	}
 }

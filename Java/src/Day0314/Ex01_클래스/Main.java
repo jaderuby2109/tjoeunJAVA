@@ -1,4 +1,4 @@
-package Day0314.Ex01_Package;
+package Day0314.Ex01_클래스;
 
 public class Main {
 

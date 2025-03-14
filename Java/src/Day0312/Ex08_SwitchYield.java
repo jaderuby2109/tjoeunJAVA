@@ -2,52 +2,51 @@ package Day0312;
 
 import java.util.Scanner;
 
+// 알클 : java, java 기본, 조건문 yield
 public class Ex08_SwitchYield {
 
 	public static void main(String[] args) {
 
-		// 알클 : java, java 기본, 조건문 yield
+		Scanner sc = new Scanner(System.in);
 
-		try (Scanner sc = new Scanner(System.in)) {
+		System.out.print("정수 입력 : ");
+		int num = sc.nextInt();
 
-			System.out.print("정수 입력 : ");
-			int num = sc.nextInt();
+		sc.close();
 
-			// 입력받은 정수를 5로 나눈 나머지가 
-			// 2보다 작으면 "*" 
-			// 그렇지 않으면 "**" 출력
-			// switch 문을 이용하시오.
+		// 입력받은 정수를 5로 나눈 나머지가 
+		// 2보다 작으면 "*" 
+		// 그렇지 않으면 "**" 출력
+		// switch 문을 이용하시오.
 
-			String result = switch (num % 5) {
-				case 0, 1: {
-					yield "*";
-				}
-				default: {
-					yield "**";
-				}
-			};
-			System.out.println("1 : " + result);
+		String result = switch (num % 5) {
+			case 0, 1: {
+				yield "*";
+			}
+			default: {
+				yield "**";
+			}
+		};
+		System.out.println("1 : " + result);
 
-			result = switch (num % 5) {
-				case 0, 1	->  "*"	;	
-				default		-> "**"	;	
-			};
-			System.out.println("2 : " + result);
+		result = switch (num % 5) {
+			case 0, 1 -> "*";
+			default   -> "**";
+		};
+		System.out.println("2 : " + result);
 
-			result = switch (num % 5) {
-				case 0, 1	->  "*"	;	
-				default		-> {
-					System.out.println("별 2개");
-					yield "**"	;	
-				}
-			};
-			System.out.println("3 : " + result);
+		result = switch (num % 5) {
+			case 0, 1 -> "*";
+			default   -> {
+				System.out.println("별 2개");
+				yield "**";
+			}
+		};
+		System.out.println("3 : " + result);
 
-			System.out.println("4 : " + switch (num % 5) {
-				case 0, 1	->  "*"	;	
-				default		-> "**"	;	
-			});
-		} catch (Exception e) {
-		}
+		System.out.println("4 : " + switch (num % 5) {
+			case 0, 1 -> "*";
+			default   -> "**";
+		});
 	}
 }

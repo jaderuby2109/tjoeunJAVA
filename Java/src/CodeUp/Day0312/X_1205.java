@@ -17,34 +17,34 @@ import java.util.Scanner;
 public class X_1205 {
 
 	public static void main(String[] args) {
-		try (Scanner sc = new Scanner(System.in)) {
-			double max = 0;
+		Scanner sc = new Scanner(System.in);
 
-			System.out.print("값1 : ");
-			double num1 = sc.nextDouble();
-			System.out.print("값2 : ");
-			double num2 = sc.nextDouble();
-			
-			max = (max < num1 + num2 && num1 + num2 < Integer.MAX_VALUE ) ? num1 + num2 : max;
-			System.out.println(num1 + num2);
-			max = (max < num1 - num2 && num1 - num2 < Integer.MAX_VALUE) ? num1 - num2 : max;
-			System.out.println(num1 - num2);
-			max = (max < num1 * num2 && num1 * num2 < Integer.MAX_VALUE) ? num1 * num2 : max;
-			System.out.println(num1 * num2);
-			max = (max < num1 / num2 && num1 / num2 < Integer.MAX_VALUE) ? num1 / num2 : max;
-			System.out.println(num1 / num2);
-			max = (max < num2 / num1 && num2 / num1 < Integer.MAX_VALUE) ? num2 / num1 : max;
-			System.out.println(num2 / num1);
-			max = (max < Math.pow(num2, num1) && Math.pow(num2, num1) < Integer.MAX_VALUE) ? Math.pow(num2, num1) : max;
-			System.out.println(Math.pow(num2, num1));
-			max = (max < Math.pow(num1, num2) && Math.pow(num1, num2) < Integer.MAX_VALUE) ? Math.pow(num1, num2) : max;
-			System.out.println(Math.pow(num1, num2));
-			
-			System.out.println("최대값은 " + max + "입니다.");
+		System.out.print("값1 : ");
+		double num1 = sc.nextDouble();
+		System.out.print("값2 : ");
+		double num2 = sc.nextDouble();
 
-		} catch (Exception e) {
-			System.out.println("에러가 발생했습니다.");
-		}
+		sc.close();
+
+		double max = 0;
+
+		max = (max < num1 + num2 && num1 + num2 < Integer.MAX_VALUE) ? num1 + num2 : max;
+		System.out.println(num1 + num2);
+		max = (max < num1 - num2 && num1 - num2 < Integer.MAX_VALUE) ? num1 - num2 : max;
+		System.out.println(num1 - num2);
+		max = (max < num1 * num2 && num1 * num2 < Integer.MAX_VALUE) ? num1 * num2 : max;
+		System.out.println(num1 * num2);
+		max = (max < num1 / num2 && num1 / num2 < Integer.MAX_VALUE) ? num1 / num2 : max;
+		System.out.println(num1 / num2);
+		max = (max < num2 / num1 && num2 / num1 < Integer.MAX_VALUE) ? num2 / num1 : max;
+		System.out.println(num2 / num1);
+		max = (max < Math.pow(num2, num1) && Math.pow(num2, num1) < Integer.MAX_VALUE) ? Math.pow(num2, num1) : max;
+		System.out.println(Math.pow(num2, num1));
+		max = (max < Math.pow(num1, num2) && Math.pow(num1, num2) < Integer.MAX_VALUE) ? Math.pow(num1, num2) : max;
+		System.out.println(Math.pow(num1, num2));
+
+		System.out.println("최대값은 " + max + "입니다.");
+
 	}
 
 }

@@ -23,53 +23,55 @@ public class Ex02_Max {
 		 * 5. 두 요소 중 더 큰 요소를 max 에 대입한다.
 		 * 6. max값을 출력한다.
 		 */
+//		// 1.
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("입력할 숫자의 개수 : ");
+//		int n = sc.nextInt();
+//
+//		// 2.
+//		int arr[] = new int[n];
+//
+//		// 3.
+//		for (int i = 0; i < arr.length; i++) {
+//			System.out.print("입력 : ");
+//			arr[i] = sc.nextInt();
+//		}
+//
+//		// 4.
+//		int max = 0;
+//
+//		// 5.
+//		for (int i = 0; i < arr.length; i++) {
+//			max = max < arr[i] ? arr[i] : max;
+//		}
+//
+//		// 6.
+//		System.out.println("최댓값 : " + max);
+//
+//		sc.close();
 
-		/*		// 1.
-				try (Scanner sc = new Scanner(System.in)) {
-					System.out.print("입력할 숫자의 개수 : ");
-					int n = sc.nextInt();
-		
-					// 2.
-					int arr[] = new int[n];
-		
-					// 3.
-					for (int i = 0; i < arr.length; i++) {
-						System.out.print("입력 : ");
-						arr[i] = sc.nextInt();
-					}
-		
-					// 4.
-					int max = 0;
-		
-					// 5.
-					for (int i = 0; i < arr.length; i++) {
-						max = max < arr[i] ? arr[i] : max;
-					}
-		
-					// 6.
-					System.out.println("최댓값 : " + max);
-				}*/
-		
 		// 1.
-		try (Scanner sc = new Scanner(System.in)) {
-			System.out.print("입력할 숫자의 개수 : ");
-			int n = sc.nextInt();
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("입력할 숫자의 개수 : ");
+		int n = sc.nextInt();
 
-			// 2.
-			int arr[] = new int[n];
-			// 4. Integer.MIN_VALUE : int의 최솟값
-			int max = Integer.MIN_VALUE;
+		// 2.
+		int arr[] = new int[n];
+		// 4. Integer.MIN_VALUE : int의 최솟값
+		int max = Integer.MIN_VALUE;
 
-			// 3.
-			for (int i = 0; i < arr.length; i++) {
-				System.out.print("입력 : ");
-				arr[i] = sc.nextInt();
-				// 5.
-				max = max < arr[i] ? arr[i] : max;
-			}
-
-			// 6.
-			System.out.println("최댓값 : " + max);
+		// 3.
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print("입력 : ");
+			arr[i] = sc.nextInt();
+			// 5.
+			max = max < arr[i] ? arr[i] : max;
 		}
+		
+		sc.close();
+
+		// 6.
+		System.out.println("최댓값 : " + max);
 	}
 }

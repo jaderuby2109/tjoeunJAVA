@@ -13,16 +13,15 @@ import java.util.Scanner;
 // 나머지를 출력한다.
 public class _1121 {
 	public static void main(String[] args) {
-		try (Scanner sc = new Scanner(System.in)) {
-			System.out.print("나누어질 값 : ");
-			int num1 = sc.nextInt();
-			System.out.print("나눌 값 : ");
-			int num2 = sc.nextInt();
+		Scanner sc = new Scanner(System.in);
 
-			System.out.println(num1 + "을 " + num2 + "로 나눈 나머지는 " + (num1 % num2) + "입니다.");
-		} catch (Exception e) {
-			System.out.println("에러가 발생했습니다.");
-		}
+		System.out.print("나누어질 값 : ");
+		int num1 = sc.nextInt();
+		System.out.print("나눌 값 : ");
+		int num2 = sc.nextInt();
+
+		sc.close();
+
+		System.out.println(num1 + "을 " + num2 + "로 나눈 나머지는 " + (num1 % num2) + "입니다.");
 	}
-
 }

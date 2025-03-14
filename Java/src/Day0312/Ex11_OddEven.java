@@ -29,7 +29,7 @@ public class Ex11_OddEven {
 		System.out.println("홀수의 합 : " + oddSum);
 		System.out.println("짝수의 합 : " + evenSum);
 	}
-	
+
 	private static void print2() {
 		int i = 1, oddSum = 0, evenSum = 0;
 

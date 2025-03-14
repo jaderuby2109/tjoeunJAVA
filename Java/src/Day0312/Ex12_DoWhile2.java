@@ -16,43 +16,42 @@ public class Ex12_DoWhile2 {
 		int    menuSum  = 0;	// 주문한 메뉴 개수
 		int    priceSum = 0;	// 주문한 메뉴의 합
 
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			// do ~ while문
-			// 무조건 1회 실행 후, 조건을 검사하여 반복하는 문장
-			do {
+		// do ~ while문
+		// 무조건 1회 실행 후, 조건을 검사하여 반복하는 문장
+		do {
 
-				System.out.print("메뉴 번호 : ");
+			System.out.print("메뉴 번호 : ");
 
-				menuNo = sc.nextInt();
+			menuNo = sc.nextInt();
 
-				// break : 제어문을 탈출하는 키워드
-				// * 가장 가까운 제어문만 탈출한다.
-				if (menuNo == 0)
-					break;
+			// break : 제어문을 탈출하는 키워드
+			// * 가장 가까운 제어문만 탈출한다.
+			if (menuNo == 0)
+				break;
 
-				// 유효성 검사
-				// - 메뉴 번호가 0 ~ 5번만 유효
-				if (!(menuNo >= 0 && menuNo <= 5)) {
-					System.out.println("(0 ~ 5)번 사이의 번호를 입력해주세요.");
-					continue;
-				}
+			// 유효성 검사
+			// - 메뉴 번호가 0 ~ 5번만 유효
+			if (!(menuNo >= 0 && menuNo <= 5)) {
+				System.out.println("(0 ~ 5)번 사이의 번호를 입력해주세요.");
+				continue;
+			}
 
-				menuName = menu[menuNo - 1].getMenuName();
-				System.out.println(menuName + "(을/를) 주문하였습니다.");
-				priceSum += menu[menuNo - 1].getPrice();
-				menuSum++;
+			menuName = menu[menuNo - 1].getMenuName();
+			System.out.println(menuName + "(을/를) 주문하였습니다.");
+			priceSum += menu[menuNo - 1].getPrice();
+			menuSum++;
 
-				System.out.println();
+			System.out.println();
 
-			} while (menuNo != 0);
+		} while (menuNo != 0);
 
-			System.out.println(menuSum + "개의 메뉴를 주문하였습니다.");
-			System.out.println("총 합계는 " + priceSum + "원 입니다.");
-			System.out.println("메뉴판을 종료합니다.");
+		sc.close();
 
-		} catch (Exception e) {
-		}
+		System.out.println(menuSum + "개의 메뉴를 주문하였습니다.");
+		System.out.println("총 합계는 " + priceSum + "원 입니다.");
+		System.out.println("메뉴판을 종료합니다.");
 
 	}
 

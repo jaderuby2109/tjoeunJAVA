@@ -12,14 +12,16 @@ public class Ex06_Grade {
 		// D: 69 ~ 60점 입니다.
 		// F: 60 ~ 0점 입니다.
 
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			System.out.print("학점 : ");
-			String grace = sc.next();
+		System.out.print("학점 : ");
+		String grace = sc.next();
+		
+		sc.close();
 
-			// 문자, 정수, 문장열은 switch문의 조건 값으로 가능
-			// 실수(float, double)는 조건 값으로 불가능
-			switch (grace) {
+		// 문자, 정수, 문장열은 switch문의 조건 값으로 가능
+		// 실수(float, double)는 조건 값으로 불가능
+		switch (grace) {
 			case "A", "a":
 				System.out.println("100 ~ 90점 입니다.");
 				break;
@@ -38,9 +40,6 @@ public class Ex06_Grade {
 			default:
 				System.out.println("A~D, F의 문자를 입력해 주세요.");
 				break;
-			}
-
-		} catch (Exception e) {
 		}
 	}
 }

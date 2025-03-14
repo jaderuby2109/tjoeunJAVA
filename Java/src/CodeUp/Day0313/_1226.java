@@ -37,11 +37,6 @@ public class _1226 {
 			lotto[i] = sc.nextInt();
 		}
 		sc.nextLine();
-		
-//		for (int i : lotto) {
-//			System.out.print(i +"\t");
-//		}
-//		System.out.println();
 
 		System.out.print("내가 가진 로또 당첨 번호는 : ");
 		for (int i = 0; i < lotto2.length; i++) {
@@ -49,11 +44,6 @@ public class _1226 {
 		}
 		sc.nextLine();
 
-//		for (int i : lotto2) {
-//			System.out.print(i +"\t");
-//		}
-//		System.out.println();
-		
 		sc.close();
 
 		// 당첨 확인
@@ -67,11 +57,10 @@ public class _1226 {
 				}
 			}
 		}
-//		System.out.println(same);
 
 		switch (same) {
 			case 6:
-				System.out.println("1");
+				System.out.println("1 (6개 맞음)");
 				break;
 			case 5:
 
@@ -83,15 +72,15 @@ public class _1226 {
 				}
 
 				if (bonus == 1)
-					System.out.println("2");
+					System.out.println("2 (5개 + 보너스 맞음)");
 				else
-					System.out.println("3");
+					System.out.println("3 (5개 맞음)");
 				break;
 			case 4:
-				System.out.println("4");
+				System.out.println("4 (4개 맞음)");
 				break;
 			case 3:
-				System.out.println("5");
+				System.out.println("5 (3개 맞음)");
 				break;
 			default:
 				System.out.println("꽝");

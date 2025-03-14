@@ -72,78 +72,79 @@ public class Ex08_Todo {
 		Todo[] todoList = new Todo[10];	// 최대 할 일 개수 10개
 		int    count    = 0;			// 할 일 개수
 
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			while (true) {
-				System.out.println("::::::::::::::: 할일 목록 프로그램 :::::::::::::::");
-				System.out.println("1. 할일 추가");
-				System.out.println("2. 할일 목록");
-				System.out.println("3. 상태 변경");
-				System.out.println("0. 프로그램 종료");
-				System.out.print("메뉴 선택 : ");
+		while (true) {
+			System.out.println("::::::::::::::: 할일 목록 프로그램 :::::::::::::::");
+			System.out.println("1. 할일 추가");
+			System.out.println("2. 할일 목록");
+			System.out.println("3. 상태 변경");
+			System.out.println("0. 프로그램 종료");
+			System.out.print("메뉴 선택 : ");
 
-				int menuNo = sc.nextInt();
-				sc.nextLine(); // 남은 엔터 제거
+			int menuNo = sc.nextInt();
+			sc.nextLine(); // 남은 엔터 제거
 
-				if (0 == menuNo) {
-					System.err.println("프로그램 종료");
+			if (0 == menuNo) {
+				System.err.println("프로그램 종료");
+				break;
+			}
+			switch (menuNo) {
+				case 1:	// 할 일 추가
+
+					System.out.print("할 일 : ");
+					String name = sc.nextLine();
+					// 할 일 추가
+					todoList[count] = new Todo(name);
+					// 할 일 개수 증가
+					count++;
+					System.out.println("할 일을 추가하였습니다.");
+					System.out.println();
+
 					break;
-				}
-				switch (menuNo) {
-					case 1:	// 할 일 추가
+				case 2:	// 할 일 목록
+					printTodoList(todoList, count);
+					break;
+				case 3: // 상태 변경
 
-						System.out.print("할 일 : ");
-						String name = sc.nextLine();
-						// 할 일 추가
-						todoList[count] = new Todo(name);
-						// 할 일 개수 증가
-						count++;
-						System.out.println("할 일을 추가하였습니다.");
+					printTodoList(todoList, count);
+
+					System.out.print("할 일 번호 : ");
+					int index = sc.nextInt() - 1;
+					sc.nextLine();
+
+					// 변경 가능한 상태 출력
+					Status[] statusList = Status.values();
+					for (Status st : statusList) {
+						System.out.println((st.ordinal() + 1) + ". " + st.getValue());
+					}
+
+					// 변경 할 상태 번호 입력
+					System.out.print("번호 : ");
+					int statusNo = sc.nextInt();
+					sc.nextLine();
+
+					if (!(statusNo == 0 || statusNo == 1 || statusNo == 2)) {
+						System.out.println("작업 상태를 변경 할 수 없습니다.");
 						System.out.println();
+						continue;
+					}
+					// 상태 변경
+					Status updateStatus = statusList[statusNo - 1];
+					todoList[index].setStatus(updateStatus);
 
-						break;
-					case 2:	// 할 일 목록
-						printTodoList(todoList, count);
-						break;
-					case 3: // 상태 변경
+					System.out.println("작업 상태를 " + updateStatus.getValue() + "(으/로) 변경하였습니다.");
 
-						printTodoList(todoList, count);
-						
-						System.out.print("할 일 번호 : ");
-						int index = sc.nextInt() - 1;
-						sc.nextLine();
+					printTodoList(todoList, count);
 
-						// 변경 가능한 상태 출력
-						Status[] statusList = Status.values();
-						for (Status st : statusList) {
-							System.out.println((st.ordinal() + 1) + ". " + st.getValue());
-						}
-
-						// 변경 할 상태 번호 입력
-						System.out.print("번호 : ");
-						int statusNo = sc.nextInt();
-						sc.nextLine();
-
-						if (!(statusNo ==0 || statusNo == 1 || statusNo == 2)) {
-							System.out.println("작업 상태를 변경 할 수 없습니다.");
-							System.out.println();
-							continue;
-						}
-						// 상태 변경
-						Status updateStatus = statusList[statusNo - 1];
-						todoList[index].setStatus(updateStatus);
-
-						System.out.println("작업 상태를 " + updateStatus.getValue() + "(으/로) 변경하였습니다.");
-						
-						printTodoList(todoList, count);
-						
-						break;
-					default:
-						System.out.println("0~3사이의 올바른 번호로 입력하세요.");
-						break;
-				}
+					break;
+				default:
+					System.out.println("0~3사이의 올바른 번호로 입력하세요.");
+					break;
 			}
 		}
+		
+		sc.close();
 	}
 
 	private static void printTodoList(Todo[] todoList, int count) {

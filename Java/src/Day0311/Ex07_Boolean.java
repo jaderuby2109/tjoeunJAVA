@@ -16,7 +16,10 @@ public class Ex07_Boolean {
 
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("true 또는 false 입력 :");
 		boolean on = sc.nextBoolean();
+		
+		sc.close();
 		
 		System.out.println("on : " + on);
 		
@@ -26,7 +29,6 @@ public class Ex07_Boolean {
 			System.out.println("전원 OFF");
 		}
 		
-		sc.close();
 	}
 	
 }

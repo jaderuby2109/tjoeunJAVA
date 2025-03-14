@@ -13,106 +13,101 @@ import java.util.Scanner;
 // 나눗셈일 경우 실수로 출력하되 소수 둘째자리까지 출력한다.
 // (0으로 나누는 경우는 입력되지 않는다.)
 public class _1231 {
-	
+
 	public static void main(String[] args) {
-//		print1();
-//		print2();
+		print1();
+		print2();
 		print3();
 	}
 
 	private static void print1() {
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			System.out.print("계산식 입력 (숫자 수식 숫자) : ");
-			double num1 = sc.nextDouble();
-			String str = sc.next();
-			double num2 = sc.nextDouble();
-			
-			if (!("+".equals(str) || "-".equals(str) || "*".equals(str) || "/".equals(str))) {
-				System.out.println("잘못 된 수식입니다.");
-				return ;
-			}
-			
-			if ("/".equals(str) && num2 == 0) {
-				System.out.println("0으로 나눌 수 없습니다.");
-				return ;
-			} 
+		System.out.print("계산식 입력 (숫자 수식 숫자) : ");
+		double num1 = sc.nextDouble();
+		String str  = sc.next();
+		double num2 = sc.nextDouble();
 
-			System.out.println(
-					switch (str) {
-						case "+" -> num1 + num2;
-						case "-" -> num1 - num2;
-						case "*" -> num1 * num2;
-						case "/" -> Math.round((double) num1 / (double)num2 * 100) / (double) 100 ;
-						default -> "";
-					}
-			);
-					
-			
-		} catch (Exception e) {
-			System.out.println("에러가 발생했습니다.");
+		sc.close();
+
+		if (!("+".equals(str) || "-".equals(str) || "*".equals(str) || "/".equals(str))) {
+			System.out.println("잘못 된 수식입니다.");
+			return;
 		}
+
+		if ("/".equals(str) && num2 == 0) {
+			System.out.println("0으로 나눌 수 없습니다.");
+			return;
+		}
+
+		System.out.println(switch (str) {
+			case "+" -> num1 + num2;
+			case "-" -> num1 - num2;
+			case "*" -> num1 * num2;
+			case "/" -> Math.round((double) num1 / (double) num2 * 100) / (double) 100;
+			default  -> "";
+		});
+
 	}
 
 	private static void print2() {
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			System.out.print("계산식 입력 (숫자 수식 숫자) : ");
-			double num1   = sc.nextDouble();
-			String str    = sc.next();
-			double num2   = sc.nextDouble();
+		System.out.print("계산식 입력 (숫자 수식 숫자) : ");
+		double num1 = sc.nextDouble();
+		String str  = sc.next();
+		double num2 = sc.nextDouble();
 
-			if (!("+".equals(str) || "-".equals(str) || "*".equals(str) || "/".equals(str))) {
-				System.out.println("잘못 된 수식입니다.");
-				return;
-			}
+		sc.close();
 
-			if ("/".equals(str) && num2 == 0) {
-				System.out.println("0으로 나눌 수 없습니다.");
-				return;
-			}
-
-			System.out.printf("%.2f", switch (str) {
-				case "+" -> num1 + num2;
-				case "-" -> num1 - num2;
-				case "*" -> num1 * num2;
-				case "/" -> (double) num1 / (double) num2;
-				default  -> 0;
-			});
-
-		} catch (Exception e) {
-			System.out.println("에러가 발생했습니다.");
+		if (!("+".equals(str) || "-".equals(str) || "*".equals(str) || "/".equals(str))) {
+			System.out.println("잘못 된 수식입니다.");
+			return;
 		}
+
+		if ("/".equals(str) && num2 == 0) {
+			System.out.println("0으로 나눌 수 없습니다.");
+			return;
+		}
+
+		System.out.printf("%.2f", switch (str) {
+			case "+" -> num1 + num2;
+			case "-" -> num1 - num2;
+			case "*" -> num1 * num2;
+			case "/" -> (double) num1 / (double) num2;
+			default  -> 0;
+		});
+
 	}
-	
+
 	private static void print3() {
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			System.out.print("계산식 입력 (숫자수식숫자) : ");
-			String str    = sc.next();
-			double num1   = 0;
-			double num2   = 0;
+		System.out.print("계산식 입력 (숫자수식숫자) : ");
+		String str = sc.next();
 
-			if (!("+".equals(str) || "-".equals(str) || "*".equals(str) || "/".equals(str))) {
-				System.out.println("잘못 된 수식입니다.");
-				return;
-			}
+		sc.close();
 
-			if ("/".equals(str) && num2 == 0) {
-				System.out.println("0으로 나눌 수 없습니다.");
-				return;
-			}
+		double num1 = 0;
+		double num2 = 0;
 
-			System.out.printf("%.2f", switch (str) {
-				case "+" -> num1 + num2;
-				case "-" -> num1 - num2;
-				case "*" -> num1 * num2;
-				case "/" -> (double) num1 / (double) num2;
-				default  -> 0;
-			});
-
-		} catch (Exception e) {
-			System.out.println("에러가 발생했습니다.");
+		if (!("+".equals(str) || "-".equals(str) || "*".equals(str) || "/".equals(str))) {
+			System.out.println("잘못 된 수식입니다.");
+			return;
 		}
+
+		if ("/".equals(str) && num2 == 0) {
+			System.out.println("0으로 나눌 수 없습니다.");
+			return;
+		}
+
+		System.out.printf("%.2f", switch (str) {
+			case "+" -> num1 + num2;
+			case "-" -> num1 - num2;
+			case "*" -> num1 * num2;
+			case "/" -> (double) num1 / (double) num2;
+			default  -> 0;
+		});
+
 	}
 }

@@ -1,4 +1,4 @@
-package Day0314.Ex01_Package;
+package Day0314.Ex01_클래스;
 
 // 클래스
 // - 변수		: 이름, 나이

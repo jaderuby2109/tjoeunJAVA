@@ -14,17 +14,15 @@ public class Ex14_Gugu {
 		// 5 * 4 = 20
 		// ...
 
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			System.out.print("입력 : ");
-			int gugu = sc.nextInt();
+		System.out.print("입력 : ");
+		int gugu = sc.nextInt();
 
-			for (int i = 1; i <= 9; i++) {
-				System.out.println(gugu + " x " + i + " = " + (gugu * i));
-			}
+		sc.close();
 
-		} catch (Exception e) {
-			System.out.println("에러발생");
+		for (int i = 1; i <= 9; i++) {
+			System.out.println(gugu + " x " + i + " = " + (gugu * i));
 		}
 
 	}

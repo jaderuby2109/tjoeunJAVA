@@ -17,66 +17,71 @@ import java.util.Scanner;
 public class _1205 {
 
 	public static void main(String[] args) {
-		double puls1     = 0, minus1 = 0, minus2 = 0, multiplication1 = 0;
+		double puls      = 0, minus1 = 0, minus2 = 0, multiple = 0;
 		double division1 = 0, division2 = 0, squareRoot1 = 0, squareRoot2 = 0;
 		double max       = Double.MIN_VALUE;
 		double boundary  = Integer.MAX_VALUE;
 
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			System.out.print("값1 : ");
-			double num1 = sc.nextDouble();
-			System.out.print("값2 : ");
-			double num2 = sc.nextDouble();
+		System.out.print("값1 : ");
+		double num1 = sc.nextDouble();
+		System.out.print("값2 : ");
+		double num2 = sc.nextDouble();
 
-			puls1           = num1 + num2;
-			minus1          = num1 - num2;
-			minus2          = num2 - num1;
-			multiplication1 = num1 * num2;
-			division1       = (double) num1 / (double) num2;
-			division2       = (double) num2 / (double) num1;
+		sc.close();
 
-			squareRoot1 = num1;
-			for (int i = 0; i < num2; i++) {
-				 squareRoot1 = squareRoot1 * (double) num1;
-			}
+		puls      = num1 + num2;
+		minus1    = num1 - num2;
+		minus2    = num2 - num1;
+		multiple  = num1 * num2;
+		division1 = (double) num1 / (double) num2;
+		division2 = (double) num2 / (double) num1;
 
-			squareRoot2 = num2;
-			for (int i = 0; i < num1; i++) {
-				squareRoot2 = squareRoot2 * (double) num2;
-			}
-			System.out.println(num1 + "+" + num2 + " : " + puls1);
-			System.out.println(num1 + "-" + num2 + " : " + minus1);
-			System.out.println(num2 + "-" + num1 + " : " + minus2);
-			System.out.println(num1 + "*" + num2 + " : " + multiplication1);
-			System.out.println(num1 + "/" + num2 + " : " + division1);
-			System.out.println(num2 + "/" + num1 + " : " + division2);
-			System.out.println(num1 + "^" + num2 + " : " + squareRoot1);
-			System.out.println(num2 + "^" + num1 + " : " + squareRoot2);
-
-			puls1           = puls1 > boundary ? Double.MIN_VALUE : puls1;
-			minus1          = minus1 > boundary ? Double.MIN_VALUE : minus1;
-			minus2          = minus2 > boundary ? Double.MIN_VALUE : minus2;
-			multiplication1 = multiplication1 > boundary ? Double.MIN_VALUE : multiplication1;
-			division1       = division1 > boundary ? Double.MIN_VALUE : division1;
-			division2       = division2 > boundary ? Double.MIN_VALUE : division2;
-			squareRoot1     = squareRoot1 > boundary ? Double.MIN_VALUE : squareRoot1;
-			squareRoot1     = squareRoot1 > boundary ? Double.MIN_VALUE : squareRoot1;
-
-			if (max < puls1)			max = puls1;
-			if (max < minus1)			max = minus1;
-			if (max < minus2)			max = minus2;
-			if (max < multiplication1)	max = multiplication1;
-			if (max < division1)		max = division1;
-			if (max < division2)		max = division2;
-			if (max < squareRoot1)		max = squareRoot1;
-			if (max < squareRoot1)		max = squareRoot1;
-
-			System.out.println("최대값은 " + max + "입니다.");
-
-		} catch (Exception e) {
-			System.out.println("에러가 발생했습니다.");
+		squareRoot1 = num1;
+		for (int i = 0; i < num2; i++) {
+			squareRoot1 = squareRoot1 * (double) num1;
 		}
-	}
 
+		squareRoot2 = num2;
+		for (int i = 0; i < num1; i++) {
+			squareRoot2 = squareRoot2 * (double) num2;
+		}
+		System.out.println(num1 + "+" + num2 + " : " + puls);
+		System.out.println(num1 + "-" + num2 + " : " + minus1);
+		System.out.println(num2 + "-" + num1 + " : " + minus2);
+		System.out.println(num1 + "*" + num2 + " : " + multiple);
+		System.out.println(num1 + "/" + num2 + " : " + division1);
+		System.out.println(num2 + "/" + num1 + " : " + division2);
+		System.out.println(num1 + "^" + num2 + " : " + squareRoot1);
+		System.out.println(num2 + "^" + num1 + " : " + squareRoot2);
+
+		puls        = puls > boundary ? Double.MIN_VALUE : puls;
+		minus1      = minus1 > boundary ? Double.MIN_VALUE : minus1;
+		minus2      = minus2 > boundary ? Double.MIN_VALUE : minus2;
+		multiple    = multiple > boundary ? Double.MIN_VALUE : multiple;
+		division1   = division1 > boundary ? Double.MIN_VALUE : division1;
+		division2   = division2 > boundary ? Double.MIN_VALUE : division2;
+		squareRoot1 = squareRoot1 > boundary ? Double.MIN_VALUE : squareRoot1;
+		squareRoot1 = squareRoot1 > boundary ? Double.MIN_VALUE : squareRoot1;
+
+		if (max < puls)
+			max = puls;
+		if (max < minus1)
+			max = minus1;
+		if (max < minus2)
+			max = minus2;
+		if (max < multiple)
+			max = multiple;
+		if (max < division1)
+			max = division1;
+		if (max < division2)
+			max = division2;
+		if (max < squareRoot1)
+			max = squareRoot1;
+		if (max < squareRoot1)
+			max = squareRoot1;
+
+		System.out.println("최대값은 " + max + "입니다.");
+	}
 }

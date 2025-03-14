@@ -13,18 +13,19 @@ public class Ex09_Circle {
 		// - 키워드 : final
 		final double PI = 3.141592;
 		// PI = 3.14;
-		
+
 		Scanner sc = new Scanner(System.in);
-		
+
+		System.out.print("반지름 : ");
+		double radius = sc.nextDouble();
+
+		sc.close();
+
 		// 원의 넓이
 		// (넓이) = (원주율) * (반지름)^2
-		
-		System.out.print("반지름 : " );
-		double radius = sc.nextDouble();
 		double area = PI * radius * radius;
 		System.out.println("원의 넓이 : " + area);
-		sc.close();
-		
+
 	}
-	
+
 }

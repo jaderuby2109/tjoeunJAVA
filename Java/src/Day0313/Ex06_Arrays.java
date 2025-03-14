@@ -20,29 +20,30 @@ public class Ex06_Arrays {
 		arr[1] = new int[4];
 		arr[2] = new int[3];
 
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			for (int i = 0; i < arr.length; i++) {
-				for (int j = 0; j < arr[i].length; j++) {
-					System.out.print(i + "행 " + j + "열 입력 : ");
-					arr[i][j] = sc.nextInt();
-				}
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(i + "행 " + j + "열 입력 : ");
+				arr[i][j] = sc.nextInt();
 			}
-
-			for (int i = 0; i < arr.length; i++) {
-				for (int j = 0; j < arr[i].length; j++) {
-					System.out.print(arr[i][j] + "\t");
-				}
-				System.out.println();
-			}
-
-			for (int[] is : arr) {
-				for (int js : is) {
-					System.out.print(js + "\t");
-				}
-				System.out.println();
-			}
-
 		}
+
+		sc.close();
+
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j] + "\t");
+			}
+			System.out.println();
+		}
+
+		for (int[] is : arr) {
+			for (int js : is) {
+				System.out.print(js + "\t");
+			}
+			System.out.println();
+		}
+
 	}
 }

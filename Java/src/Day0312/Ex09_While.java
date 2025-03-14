@@ -31,9 +31,9 @@ public class Ex09_While {
 		System.out.println();
 
 		a = 1;
-		while (a <= 10) { 
+		while (a <= 10) {
 			System.out.print(a + " ");
-			a++ ;	// 증감연산자
+			a++;	// 증감연산자
 		}
 		System.out.println();
 

@@ -12,21 +12,19 @@ import java.util.Scanner;
 // *
 public class _1354 {
 	public static void main(String[] args) {
-		try (Scanner sc = new Scanner(System.in)) {
+		Scanner sc = new Scanner(System.in);
 
-			System.out.print("입력 : ");
-			int num = sc.nextInt();
+		System.out.print("입력 : ");
+		int num = sc.nextInt();
 
-			for (int i = 1; i <= num; i++) {
-				for (int j = num; j >= i; j--) {
+		sc.close();
 
-					System.out.print("*");
-				}
-				System.out.println();
+		for (int i = 1; i <= num; i++) {
+			for (int j = num; j >= i; j--) {
+
+				System.out.print("*");
 			}
-
-		} catch (Exception e) {
-			System.out.println("에러가 발생했습니다.");
+			System.out.println();
 		}
 	}
 }

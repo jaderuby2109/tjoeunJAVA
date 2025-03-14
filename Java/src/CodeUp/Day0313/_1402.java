@@ -12,21 +12,23 @@ public class _1402 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("입력 : ");
+		System.out.print("입력 할 개수 : ");
 		int num = sc.nextInt();
 
-		for (int i = 1; i <= num; i++) {
-			for (int j = 1; j <= num; j++) {
+		int number[] = new int[num];
 
-				if (i <= j )
-				System.out.print("*");
-				else 
-					System.out.print(" ");
-			}
-			System.out.println();
+		System.out.print("숫자 입력 : ");
+
+		for (int i = 0; i < number.length; i++) {
+			number[i] = sc.nextInt();
+
 		}
-		
-		
+
 		sc.close();
+
+		for (int i = number.length - 1; i >= 0; i--) {
+			System.out.print(number[i] + "\t");
+
+		}
 	}
 }

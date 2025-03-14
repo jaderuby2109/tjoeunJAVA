@@ -9,7 +9,7 @@ public class Ex02_Scanner {
 	public static void main(String[] args) {
 
 		System.out.print("a : ");
-		
+
 		// 객체 생성 키워드 : new
 		// 클래스타입 객체명 = new 클래스명();
 		// Scanner : 표준 입력 객체
@@ -22,30 +22,28 @@ public class Ex02_Scanner {
 
 		// nextInt() : 정수 하나를 입력 받는 메소드
 		int a = sc.nextInt();
-		System.out.println("a : " + a);
 
 		// close() : Scanner 객체를 메모리에서 제하는 메소드
 		sc.close();
 
+		System.out.println("a : " + a);
+
 		// Scanner 객체를 해제한 후에는 더이상 입력을 받을 수 없다.
 		// sc.nextInt();
 
+//		test();
 	}
-	
+
 	public static void test() {
 
-		int a;
+		Scanner sc = new Scanner(System.in);
+
 		System.out.print("입력하세요. : ");
 
-		try (Scanner sc = new Scanner(System.in)) {
-
-			while (sc.hasNext()) {
-				a = sc.nextInt();
-				System.out.println("입력하신 값은 : " + a);
-			}
-		} catch (Exception e) {
-			System.out.println("에러가 발생했습니다.");
+		while (sc.hasNext()) {
+			int a = sc.nextInt();
+			System.out.println("입력하신 값은 : " + a);
 		}
-
+		sc.close();
 	}
 }
