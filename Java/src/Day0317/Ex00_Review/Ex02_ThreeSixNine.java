@@ -1,4 +1,4 @@
-package Day0317.Review;
+package Day0317.Ex00_Review;
 
 public class Ex02_ThreeSixNine {
 

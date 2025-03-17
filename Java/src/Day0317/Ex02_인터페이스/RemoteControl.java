@@ -32,6 +32,5 @@ public interface RemoteControl {
 	// : 구현 객체가 없어도 인터페이스만으로도 호출이 가능한 메소드
 	static void changeBattery() {
 		System.out.println("배터리를 교체합니다.");
-
 	}
 }
