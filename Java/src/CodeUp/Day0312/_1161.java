@@ -1,5 +1,7 @@
 package CodeUp.Day0312;
 
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 // 정수 두개가 입력으로 들어온다.
@@ -17,17 +19,21 @@ import java.util.Scanner;
 // 두 수의 합이 홀수인지 짝수인지 출력한다.
 public class _1161 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+
+		System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8.name()));
+
 		Scanner sc = new Scanner(System.in);
-		System.out.print("값1 : ");
+
 		int num1 = sc.nextInt();
-		System.out.print("값2 : ");
 		int num2 = sc.nextInt();
+
 		sc.close();
-		
-		System.out.println((num1 % 2 == 0 ? "짝수" : "홀수") + " + " + 
-							(num2 % 2 == 0 ? "짝수" : "홀수") + " = " + 
-							((num1 + num2) % 2 == 0 ? "짝수" : "홀수"));
+
+		String num1Check = num1 % 2 == 0 ? "짝수" : "홀수";
+		String num2Check = num2 % 2 == 0 ? "짝수" : "홀수";
+		String num3Check = (num1 + num2) % 2 == 0 ? "짝수" : "홀수";
+		System.out.println(num1Check + "+" + num2Check + "=" + num3Check);
 
 	}
 }

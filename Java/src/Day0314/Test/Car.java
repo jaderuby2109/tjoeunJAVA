@@ -5,23 +5,18 @@ public class Car {
 	public String name;
 
 	public Car() {
-		this.name = "Car";
-
-		System.out.println("Car 1");
+		this.name = "차";
 	}
 
 	public Car(String str) {
-		this.name = "Car";
-
-		System.out.println("Car 2");
+		this.name = "차";
 	}
 
 	public void printString() {
-		System.out.println("Car\t: " + this.name);
+		System.out.println("차의 메소드\t\t: " + this.name);
 	}
 
 	public String getName() {
 		return this.name;
 	}
-
 }

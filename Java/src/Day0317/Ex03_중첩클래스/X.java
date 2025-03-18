@@ -19,6 +19,7 @@ public class X {
 		}
 
 		void method1() {
+			System.out.println("------------------------------");
 			System.out.println("Y의 메소드");
 			System.out.println("------------------------------");
 			System.out.println("Y의 변수\t\t: " + yInt);
@@ -28,6 +29,7 @@ public class X {
 		}
 
 		static void method2() {
+			System.out.println("------------------------------");
 			System.out.println("Y의 static 메소드");
 			System.out.println("------------------------------");
 			// System.out.println("Y의 변수\t\t: " + yInt);
@@ -103,6 +105,6 @@ public class X {
 		}
 		L l = new L();
 		l.method1();
-		l.method2();
+		L.method2();
 	}
 }
