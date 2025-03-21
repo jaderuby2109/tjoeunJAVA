@@ -5,7 +5,7 @@ public class Person {
 	// 변수 : 이름, 나이, 키, 체중
 	public String name;		// public		모든 곳에서 접근 가능
 	protected int age;		// protected	같은 패키지 || 상속에서 접근 가능
-	int           height;	// defult		같은 패키지에서 접근 가능
+	int           height;	// default		같은 패키지에서 접근 가능
 	private int   weight;	// private		해당 클래스에서 접근 가능
 
 	// 생성자
