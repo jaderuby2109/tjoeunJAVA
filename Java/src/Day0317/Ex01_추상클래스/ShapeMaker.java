@@ -1,6 +1,5 @@
 package Day0317.Ex01_추상클래스;
 
-import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class ShapeMaker {

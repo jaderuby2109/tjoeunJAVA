@@ -12,7 +12,6 @@ public class Car {
 	// - 전체 매개 변수 생성자
 	public Car() {
 		this("모델명 없음", 0);
-
 	}
 
 	public Car(String model) {
