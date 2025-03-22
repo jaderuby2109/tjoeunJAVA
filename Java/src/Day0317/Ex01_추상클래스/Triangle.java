@@ -19,11 +19,10 @@ public class Triangle extends Shape {
 	double area() {
 
 		// 삼각형의 넓이 = (가로) * (세로) / 2
-		
-		BigDecimal a = (BigDecimal.valueOf(width).multiply(BigDecimal.valueOf(height))) ;
-		
-		
-		return ( a.doubleValue() / 2);
+
+		BigDecimal a = (BigDecimal.valueOf(width).multiply(BigDecimal.valueOf(height)));
+
+		return (a.doubleValue() / 2);
 	}
 
 	@Override
