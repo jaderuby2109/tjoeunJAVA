@@ -1,7 +1,7 @@
 package Chapter010.Ex03;
 
 public class Customer implements Buy, Sell {
-
+	
 	@Override
 	public void buy() {
 		System.out.println("Customer : buy : 구매 하기");
