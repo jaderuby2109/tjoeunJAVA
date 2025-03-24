@@ -1,5 +1,7 @@
 package Day0313;
 
+
+
 enum GameLevel {
 	A(1, "AA"), B(2, "BB"), C(3, "CC");
 
@@ -30,7 +32,7 @@ enum GameLevel {
 	@Override
 	public String toString() {
 		return "[intA : " + intA + "], [strB : " + strB + "]";
-//		return super.toString();
+		// return super.toString();
 	}
 
 }
@@ -61,7 +63,7 @@ public class Ex07_EnumTest {
 		System.out.println();
 
 		/*
-		 * enum이 제공하는 메소드 
+		 * enum이 제공하는 메소드
 		 * valuse()
 		 * toString()
 		 * valusOf()
@@ -73,7 +75,7 @@ public class Ex07_EnumTest {
 		System.out.println();
 
 		GameLevel gameLevel2 = GameLevel.valueOf("A");
-		
+
 		System.out.println(gameLevel2);
 		System.out.println(gameLevel2.getIntA());
 		System.out.println(gameLevel2.getStrA());
