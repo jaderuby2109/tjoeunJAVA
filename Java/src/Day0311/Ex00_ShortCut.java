@@ -20,6 +20,6 @@ package Day0311;
 // 앞으로 가기	: ctrl + Y
 // 전체화면	: ctrl + M
 
-public class Ex01_ShortCut {
+public class Ex00_ShortCut {
 
 }

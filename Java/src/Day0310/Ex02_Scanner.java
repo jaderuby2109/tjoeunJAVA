@@ -6,21 +6,22 @@ import java.util.Scanner;
 
 public class Ex02_Scanner {
 
+	// main : ctrl + space
 	public static void main(String[] args) {
-
-		System.out.print("a : ");
 
 		// 객체 생성 키워드 : new
 		// 클래스타입 객체명 = new 클래스명();
 		// Scanner : 표준 입력 객체
+		// Scanner sc = new Scanner(System.in);
 		Scanner sc = new Scanner(System.in);
 
 		// 에러 : 빨간색 밑줄로 표시
-		// 에러가 발생하면, 프로그램 실행 불가
+		// 		 에러가 발생하면, 프로그램 실행 불가
 		// 경고 : 노란색 밑줄로 표시
-		// 경고가 발생해도, 프로그램 실행 가능
+		// 		 경고가 발생해도, 프로그램 실행 가능
 
 		// nextInt() : 정수 하나를 입력 받는 메소드
+		System.out.print("a : ");
 		int a = sc.nextInt();
 
 		// close() : Scanner 객체를 메모리에서 제하는 메소드
@@ -30,20 +31,5 @@ public class Ex02_Scanner {
 
 		// Scanner 객체를 해제한 후에는 더이상 입력을 받을 수 없다.
 		// sc.nextInt();
-
-//		test();
-	}
-
-	public static void test() {
-
-		Scanner sc = new Scanner(System.in);
-
-		System.out.print("입력하세요. : ");
-
-		while (sc.hasNext()) {
-			int a = sc.nextInt();
-			System.out.println("입력하신 값은 : " + a);
-		}
-		sc.close();
 	}
 }

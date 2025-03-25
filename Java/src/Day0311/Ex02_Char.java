@@ -3,6 +3,7 @@ package Day0311;
 public class Ex02_Char {
 	public static void main(String[] args) {
 		// 문자 데이터 : char
+		// * 작은 따옴표 '' 롤 한 글자의 문자를 표현
 		// 리터럴(Literal)
 		// : 소스 코드에 표기하는 데이터 (숫자인지, 문자인지, 문자열인지 의미를 부여)
 
