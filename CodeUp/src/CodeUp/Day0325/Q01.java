@@ -1,34 +1,66 @@
 package CodeUp.Day0325;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
 
+//전화번호 목록
+//https://school.programmers.co.kr/learn/courses/30/lessons/42577
+//
+//K번째수
+//https://school.programmers.co.kr/learn/courses/30/lessons/42748
+//
+//모의고사
+//https://school.programmers.co.kr/learn/courses/30/lessons/42840
+	
 class Solution {
 	public int[] solution(int[] array, int[][] commands) {
 
-		int[][] copy = new int[commands.length][];
+		int count = 0;
+
+		if (!(array.length >= 1 && array.length <= 100))
+			return null;
+
+		for (int is : array) {
+			if (!(is >= 1 && is <= 100))
+				count++;
+		}
+
+		if (!(commands.length >= 1 && commands.length <= 50))
+			return null;
+
+		for (int i = 0; i < commands.length; i++) {
+			if (commands[i].length != 3)
+				count++;
+		}
+		if (count > 0)
+			return null;
+
 		int[] answer = new int[commands.length];
-
-		// 복사
-		for (int i = 0; i < copy.length; i++) {
-			copy[i] = Arrays.copyOfRange(array, commands[i][0] - 1, commands[i][1]);
+		
+		for (int i = 0; i < commands.length; i++) {
 			
-			// 정렬
-			int[] copyOne = copy[i];
-			
-			for (int row = 0; row < copyOne.length - 1; row++) {
-				for (int col = 0; col < copyOne.length - 1 - row; col++) {
-					if (copyOne[col] > copyOne[col + 1]) {
-						int temp = copyOne[col];
-						copyOne[col]     = copyOne[col + 1];
-						copyOne[col + 1] = temp;
-					}
-				}
+			if (commands[i].length < 3) {
+				answer[i] = 0 ; continue;
 			}
+			
+			if (commands[i][0] > commands[i][1]) {
+				answer[i] = 0 ; continue;
+			}
+			
+			ArrayList<Integer> copy = new ArrayList<Integer>();
+
+			// 복사
+			for (int j = commands[i][0] - 1; j < commands[i][1]; j++) {
+				copy.add(array[j]);
+			}
+
+			// 정렬
+			Collections.sort(copy);
+			
+			// k 번째 값
+			answer[i] = copy.get(commands[i][2] - 1);
 		}
 
-		for (int i = 0; i < answer.length; i++) {
-			answer[i] = copy[i][commands[i][2] - 1];
-		}
 		return answer;
 	}
 }
