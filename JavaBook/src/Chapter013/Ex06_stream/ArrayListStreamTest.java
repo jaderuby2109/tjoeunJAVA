@@ -1,4 +1,4 @@
-package Chapter013.stream;
+package Chapter013.Ex06_stream;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,14 +12,14 @@ public class ArrayListStreamTest {
 		sList.add("Tomas");
 		sList.add("Edward");
 		sList.add("Jack");
-		
+
 		Stream<String> stream = sList.stream();
-		stream.forEach(s->System.out.print(s + " "));
+		stream.forEach(s -> System.out.print(s + " "));
 		System.out.println();
-		
-		sList.stream().sorted().forEach(s->System.out.print(s+ " "));
-	//	sList.stream().map(s->s.length()).forEach(n->System.out.println(n));
-	//	sList.stream().filter(s->s.length() >= 5).forEach(s->System.out.println(s));
-		
+
+		sList.stream().sorted().forEach(s -> System.out.print(s + " "));
+		 sList.stream().map(s->s.length()).forEach(n->System.out.println(n));
+		 sList.stream().filter(s->s.length() >= 5).forEach(s->System.out.println(s));
+
 	}
 }

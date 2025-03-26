@@ -1,4 +1,4 @@
-package Chapter013.lambda;
+package Chapter013.Ex02_lambda;
 
 @FunctionalInterface
 public interface Add {

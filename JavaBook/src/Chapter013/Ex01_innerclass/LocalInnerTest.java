@@ -1,4 +1,4 @@
-package Chapter013.innerclass;
+package Chapter013.Ex01_innerclass;
 
 
 class Outer{

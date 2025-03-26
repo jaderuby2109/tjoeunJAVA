@@ -1,13 +1,11 @@
-package Chapter013.lambda;
+package Chapter013.Ex02_lambda;
 
 public class TestAdd {
 
 	public static void main(String[] args) {
 
 		Add addF = (x, y) -> x + y;
-		
-		
-		System.out.println(addF.add(3,5));
-	}
 
+		System.out.println(addF.add(3, 5));
+	}
 }
