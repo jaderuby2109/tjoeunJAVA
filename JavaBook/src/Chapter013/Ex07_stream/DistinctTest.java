@@ -37,6 +37,16 @@ public class DistinctTest {
 		studentList.add(studentLee3);
 		studentList.add(studentMoon2);
 
+		// 이름이 같아도 다른 객체이므로 중복해서 나옴
+		studentList.stream()
+				// 같은 멤버는 제외하기
+				.distinct()
+				// 출력
+				.forEach(s -> System.out.print(s.getName() + ", "));
+		System.out.println();
+		System.out.println();
+
+		// 이름으로 map을 만든 후 중복 제거
 		studentList.stream()
 				// 이름으로 맵만들기
 				.map(Student::getName)
@@ -45,14 +55,6 @@ public class DistinctTest {
 				// 출력
 				.forEach(s -> System.out.print(s + ", "));
 		System.out.println();
-
-		studentList.stream()
-				// 같은 멤버는 제외하기
-				.distinct()
-				// 출력
-				.forEach(s -> System.out.print(s.getName() + ", "));
 		System.out.println();
-
-		studentList.stream().distinct().forEach(s -> System.out.println(s.getName() + "님 안녕하세요"));
 	}
 }

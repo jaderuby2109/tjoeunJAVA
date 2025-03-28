@@ -1,14 +1,14 @@
-package Chapter013.stream;
+package Chapter013.Ex08_stream;
 
 public class TravelCustomer {
 
-	private String name;   //�̸�
-	private int age;       //����
-	private int price;     //����
-	
+	private String name;	// 고객 이름
+	private int    age;		// 나이
+	private int    price;	// 가격
+
 	public TravelCustomer(String name, int age, int price) {
-		this.name = name;
-		this.age = age;
+		this.name  = name;
+		this.age   = age;
 		this.price = price;
 	}
 
@@ -23,8 +23,8 @@ public class TravelCustomer {
 	public int getPrice() {
 		return price;
 	}
-	
+
 	public String toString() {
-		return "name: " + name + "age: " + age + "price: " + price; 
+		return "name: " + name + "age: " + age + "price: " + price;
 	}
 }

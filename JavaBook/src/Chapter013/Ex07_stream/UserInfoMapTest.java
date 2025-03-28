@@ -37,7 +37,7 @@ public class UserInfoMapTest {
 		userInfoList.stream()
 				// 40세 이상 사용자 필터링
 				.filter(user -> user.getAge() >= 40)
-				// 이름을 추출
+				// 이름을 추출 UserInfo클래스를 인자로 해서 getName()의 결과 값을 가져옴
 				.map(UserInfo::getName)
 				// 각 요소를 반복해서 출력
 				.forEach(s -> System.out.println(s));
