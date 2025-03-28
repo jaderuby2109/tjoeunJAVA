@@ -10,8 +10,8 @@ public class BooleanEx {
 		// : 불타입인 boolean 기본타입을 객체화한 클래스
 		Integer i = 100;
 		Boolean b = (i < 40);
-		System.out.println(Boolean.toString(b) + "입니다.");		// false 	->	"false"
-		System.out.println(Boolean.parseBoolean("false"));		// "false" 	-> 	false
+		System.out.println(Boolean.toString(b) + "입니다.");		// false -> "false"
+		System.out.println(Boolean.parseBoolean("false"));		// "false" -> false
 
 		Scanner sc = new Scanner(System.in);
 		System.out.print("입력 : ");

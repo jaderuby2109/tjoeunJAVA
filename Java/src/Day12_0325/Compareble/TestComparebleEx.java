@@ -45,8 +45,7 @@ public class TestComparebleEx {
 		// 정렬
 		// 정렬 후
 		System.out.println("정렬 후");
-		bookList.stream()
-			.sorted((book1, book2) -> Integer.compare(book1.price, book2.price))
-			.forEach(book -> System.out.println(book));
+		bookList.stream().sorted((book1, book2) -> Integer.compare(book1.price, book2.price))
+				.forEach(book -> System.out.println(book));
 	}
 }

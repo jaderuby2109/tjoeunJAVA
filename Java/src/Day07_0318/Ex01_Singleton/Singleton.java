@@ -10,16 +10,15 @@ package Day07_0318.Ex01_Singleton;
  */
 public class Singleton {
 
-	// private 생성자 정의
-	private Singleton() {
-	}
-
 	// static 으로 유일한 객체 선언
 	private static Singleton instance;
 
+	// private 생성자 정의
+	private Singleton() {}
+
 	// 유일한 인스턴스를 반환하는 메소드
 	public static Singleton getInstance() {
-		if (instance == null) {
+		if (null == instance) {
 			instance = new Singleton();
 		}
 		return instance;

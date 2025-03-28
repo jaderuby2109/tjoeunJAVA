@@ -30,7 +30,7 @@ public class LottoSet {
 		// 순서가 있는 List 컬렉션으로 변환하여 정렬할 수 있다.
 		List<Integer> lottoList = new ArrayList<Integer>(lottoSet);
 		Collections.sort(lottoList);
-		
+
 		System.out.println("로또 번호 : " + lottoList);
 	}
 }

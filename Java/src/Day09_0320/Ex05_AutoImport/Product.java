@@ -1,4 +1,4 @@
-package Day09_0320.패키지;
+package Day09_0320.Ex05_AutoImport;
 
 public class Product {
 
@@ -6,8 +6,7 @@ public class Product {
 	int    price;	// 가격
 
 	// 생성자
-	public Product() {
-	}
+	public Product() {}
 
 	// getter, setter
 	public String getName() {

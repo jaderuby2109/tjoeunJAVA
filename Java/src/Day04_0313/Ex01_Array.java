@@ -19,7 +19,7 @@ public class Ex01_Array {
 		// 배열 선언 및 생성
 		int arr2[] = new int[5];
 		// 배열 선언 및 초기화
-		int arr3[] = { 1, 2, 3, 4, 5 };
+		int arr3[] = {1, 2, 3, 4, 5};
 
 		// 배열 요소 접근
 		arr[0] = 1;

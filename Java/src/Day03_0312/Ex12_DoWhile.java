@@ -32,17 +32,15 @@ public class Ex12_DoWhile {
 
 			// break : 제어문을 탈출하는 키워드
 			// * 가장 가까운 제어문만 탈출한다.
-			if (menuNo == 0)
-				break;
+			if (menuNo == 0) break;
 
-			switch(menuNo) {
-				case 1:	menuName = "가츠동";			break;
-				case 2:	menuName = "마라탕";			break;
-				case 3:	menuName = "징거버거";		break;
-				case 4:	menuName = "돈까스덮밥";		break;
-				case 5:	menuName = "닭가슴살볶음밥";	break;
-				default:
-					break;
+			switch (menuNo) {
+				case 1 :	menuName = "가츠동";			break;
+				case 2 :	menuName = "마라탕";			break;
+				case 3 :	menuName = "징거버거";			break;
+				case 4 :	menuName = "돈까스덮밥";		break;
+				case 5 :	menuName = "닭가슴살볶음밥";		break;
+				default :								break;
 			}
 
 			// 유효성 검사
@@ -62,6 +60,5 @@ public class Ex12_DoWhile {
 
 		System.out.println(menuSum + "개의 메뉴를 주문하였습니다.");
 		System.out.println("메뉴판을 종료합니다.");
-
 	}
 }

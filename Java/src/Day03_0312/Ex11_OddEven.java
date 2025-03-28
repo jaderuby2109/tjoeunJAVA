@@ -20,10 +20,10 @@ public class Ex11_OddEven {
 
 		while (i <= 20) {
 			// 홀수
-			if( i % 2 == 1 )
+			if (i % 2 == 1) 
 				oddSum = oddSum + i;
 			// 짝수
-			if( i % 2 == 0 )
+			if (i % 2 == 0) 
 				evenSum = evenSum + i;
 			i++;
 		}

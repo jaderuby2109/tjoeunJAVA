@@ -3,7 +3,7 @@ package Day04_0313;
 public class Ex04_Foreach {
 
 	public static void main(String[] args) {
-		String[] week = { "월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일" };
+		String[] week = {"월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"};
 
 		// foreach
 		// - for (자료형 반복요소명 : 배열) { }

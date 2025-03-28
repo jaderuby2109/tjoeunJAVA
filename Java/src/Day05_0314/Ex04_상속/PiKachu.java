@@ -18,7 +18,7 @@ public class PiKachu {
 	// 생성자
 	public PiKachu() {
 		// this.energy = 100;
-		// this.type   = "전기";
+		// this.type = "전기";
 		this(100, "전기");
 	}
 

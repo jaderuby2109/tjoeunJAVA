@@ -15,13 +15,13 @@ public class Ex02_Scanner {
 		// Scanner sc = new Scanner(System.in);
 		Scanner sc = new Scanner(System.in);
 
-		// 에러 : 빨간색 밑줄로 표시
-		// 		 에러가 발생하면, 프로그램 실행 불가
-		// 경고 : 노란색 밑줄로 표시
-		// 		 경고가 발생해도, 프로그램 실행 가능
+		// 에러 :	빨간색 밑줄로 표시
+		// 		에러가 발생하면, 프로그램 실행 불가
+		// 경고 :	노란색 밑줄로 표시
+		// 		경고가 발생해도, 프로그램 실행 가능
 
 		System.out.print("a : ");
-		
+
 		// nextInt() : 정수 하나를 입력 받는 메소드
 		int a = sc.nextInt();
 

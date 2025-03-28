@@ -1,6 +1,6 @@
 package Day07_0318.Ex02_Builder;
 
-public class T {
+public class Test01 {
 	public static void main(String[] args) {
 
 		// 사용 예시

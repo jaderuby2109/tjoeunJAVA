@@ -4,7 +4,6 @@ import java.util.Iterator;
 import java.util.Stack;
 
 public class StackEx {
-
 	private Stack<String> history     = new Stack<String>();
 	private String        currentPage = "시작 페이지";
 
@@ -17,6 +16,7 @@ public class StackEx {
 
 	// 뒤로가기
 	public void goBack() {
+
 		if (!history.isEmpty()) {
 			currentPage = history.pop();
 			System.out.println("뒤로 가기\t\t: " + currentPage);
@@ -24,7 +24,7 @@ public class StackEx {
 			System.out.println("뒤로 갈 수 없습니다.");
 		}
 	}
-	
+
 	public void nowPage() {
 		System.out.println("현재 페이지\t: " + currentPage);
 	}
@@ -34,10 +34,10 @@ public class StackEx {
 		System.out.println();
 		System.out.println("::::: 방문 기록 :::::");
 		Iterator<String> it = history.iterator();
+
 		while (it.hasNext()) {
 			String page = (String) it.next();
 			System.out.println(page);
-
 		}
 	}
 
@@ -51,18 +51,15 @@ public class StackEx {
 		web.nowPage();
 		web.visit("쇼핑몰");
 		web.nowPage();
-		
 		web.showHistory();
-System.out.println();		
+		System.out.println();
 		// 뒤로가기
-web.nowPage();
-		web.goBack();
+		web.nowPage();
 		web.nowPage();
 		web.goBack();
 		web.nowPage();
 		web.goBack();
 		web.nowPage();
-
 		web.showHistory();
 	}
 }

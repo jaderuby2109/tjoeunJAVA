@@ -1,8 +1,7 @@
 package Day03_0312;
 
 public class Ex12_Menu {
-	public Ex12_Menu() {
-	}
+	public Ex12_Menu() {}
 
 	public Ex12_Menu(int muneNo, String menuName, String shopName, int price) {
 		this.muneNo   = muneNo;
@@ -31,5 +30,4 @@ public class Ex12_Menu {
 	public int getPrice() {
 		return price;
 	}
-
 }

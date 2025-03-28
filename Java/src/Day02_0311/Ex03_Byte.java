@@ -4,7 +4,7 @@ public class Ex03_Byte {
 
 	public static void main(String[] args) {
 		// byte는 1byte 범위의 정수 데이터를 표현
-		// 1byte = 8bit		(0000 0000) : 2 ^ 8 : 256개
+		// 1byte = 8bit (0000 0000) : 2 ^ 8 : 256개
 		// 양수와 음수로 나누면 -128 ~ 127 범위로 표현 가능
 
 		byte var1 = -128;

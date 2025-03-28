@@ -38,6 +38,7 @@ public class InputMismatchEx {
 				continue;
 			}
 
+			// 종료 조건
 			if (menuNo == 0) {
 				System.out.print("종료");
 				break;
@@ -56,11 +57,9 @@ public class InputMismatchEx {
 				case 10:menuName = "Express";			break;
 				case 11:menuName = "Flutter";			break;
 			}
-
 			System.out.println(menuName + "(을/를) 공부를 합니다.");
 
 		} while (true);
-
 		sc.close();
 	}
 }

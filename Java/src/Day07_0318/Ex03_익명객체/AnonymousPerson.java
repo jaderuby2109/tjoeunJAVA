@@ -37,5 +37,4 @@ public class AnonymousPerson {
 		person2.age  = 40;
 		person2.work();
 	}
-
 }

@@ -3,7 +3,7 @@ package Day09_0320.Ex02_Wrapper;
 public class CharacterEx {
 
 	public static void main(String[] args) {
-		// Character 
+		// Character
 		// char -> Character
 		// : 문자 타입인 char 기본 타입을 객체화한 클래스
 		// * 주요 메소드
@@ -43,5 +43,4 @@ public class CharacterEx {
 		}
 		System.out.println(str + " - 대문자 개수 : " + count);
 	}
-
 }

@@ -22,5 +22,4 @@ public class Ex13_For {
 			System.out.print(i + " ");
 		System.out.println();
 	}
-
 }

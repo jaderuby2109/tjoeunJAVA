@@ -7,8 +7,8 @@ public class UpCating {
 		// : 자식 객체를 부모 클래스 타입으로 변환하는 것
 		Person person = new Student("김조은", 20, 1, "문예창작과");
 
-		// Person	: name, age
-		// Student	: name, age, grade, major
+		// Person : name, age
+		// Student : name, age, grade, major
 		System.out.println("name\t: " + person.name);
 		System.out.println("age\t: " + person.age);
 

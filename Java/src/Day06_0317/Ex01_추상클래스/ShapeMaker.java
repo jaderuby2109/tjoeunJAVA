@@ -17,18 +17,16 @@ public class ShapeMaker {
 		Scanner sc = new Scanner(System.in);
 
 		while (true) {
-			if (index == 3)
-				break;
+			if (index == 3) break;
 
 			System.out.println("1. 삼각형, 2. 사각형, 3. 원형, 0. 종료");
 			System.out.print(">> ");
 			String input = sc.next();
 
-			if ("그만".equals(input) || "0".equals(input))
-				break;
+			if ("그만".equals(input) || "0".equals(input)) break;
 
-			switch(input) {
-				case "1":
+			switch (input) {
+				case "1" :
 					System.out.print("삼각형 가로 : ");
 					width = sc.nextDouble();
 					System.out.print("삼각형 세로 : ");
@@ -59,7 +57,7 @@ public class ShapeMaker {
 
 					break;
 
-				case "2":
+				case "2" :
 					System.out.print("사각형 가로 : ");
 					width = sc.nextDouble();
 					System.out.print("사각형 세로 : ");
@@ -68,14 +66,14 @@ public class ShapeMaker {
 					shapeList[index++] = new Rectangle(width, height);
 					break;
 
-				case "3":
+				case "3" :
 					System.out.print("반지름 : ");
 					radius = sc.nextDouble();
 
 					shapeList[index++] = new Circle(radius);
 					break;
 
-				default:
+				default :
 					break;
 			} // switch 끝
 		} // while 끝
@@ -87,8 +85,7 @@ public class ShapeMaker {
 		double roundSum = 0.0;
 
 		for (Shape shape : shapeList) {
-			if (null == shape)
-				continue;
+			if (null == shape) continue;
 
 			double area  = shape.area();
 			double round = shape.round();
@@ -98,12 +95,9 @@ public class ShapeMaker {
 			roundSum += round;
 
 			// instanceof : 인스턴스를 확인하는 연산
-			if (shape instanceof Triangle)
-				System.out.println("삼각형");
-			if (shape instanceof Rectangle)
-				System.out.println("사각형");
-			if (shape instanceof Circle)
-				System.out.println("원형");
+			if (shape instanceof Triangle)		System.out.println("삼각형");
+			if (shape instanceof Rectangle)		System.out.println("사각형");
+			if (shape instanceof Circle)		System.out.println("원형");
 
 			System.out.print("넓이 : " + area + "\t");
 			System.out.print("둘레 : " + round + "\n");

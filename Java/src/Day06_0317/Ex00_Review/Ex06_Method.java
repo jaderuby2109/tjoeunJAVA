@@ -30,7 +30,7 @@ public class Ex06_Method {
 		// 3. 메소드 해제
 
 		return result;
-		//		System.out.println("종료 이후에 출력!");
+		// System.out.println("종료 이후에 출력!");
 	}
 
 	public static void main(String[] args) {

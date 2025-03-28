@@ -17,6 +17,7 @@ public class ArrayListEx {
 
 		// 반복 출력
 		System.out.println("::::: 장바구니 목록 :::::");
+
 		for (String item : shoppingCart) {
 			System.out.print(item + "\t");
 		}
@@ -46,16 +47,14 @@ public class ArrayListEx {
 
 		// 요소 확인
 		boolean hasCalaxyBook = shoppingCart.contains("삼성 갤럭시북");
-		if (hasCalaxyBook)
-			System.out.println("갤럭시북이 있습니다.");
-		else
-			System.out.println("갤럭시북이 없습니다.");
+		if (hasCalaxyBook) System.out.println("갤럭시북이 있습니다.");
+		else System.out.println("갤럭시북이 없습니다.");
 		System.out.println();
-		
+
 		// 요소 전체 추가 - addAll()
 		System.out.println("::::: 요소 전체 추가 :::::");
 		System.out.println("추가 전 : " + shoppingCart.size());
-		
+
 		ArrayList<String> addShoppingCart = new ArrayList<String>();
 		addShoppingCart.add("아웃백 외식 상품권 100만원");
 		addShoppingCart.add("신세계 백화점 상품권 100만원");
@@ -63,7 +62,7 @@ public class ArrayListEx {
 		shoppingCart.addAll(addShoppingCart);
 		System.out.println("추가 후 : " + shoppingCart.size());
 		System.out.println();
-		
+
 		// 모든 요소 제거 - clear()
 		System.out.println("::::: 모든 요소 제거 :::::");
 		shoppingCart.clear();
@@ -71,7 +70,9 @@ public class ArrayListEx {
 
 		System.out.println();
 		System.out.println("가지고 싶은 물건 5가지 입력하기");
+
 		Scanner sc = new Scanner(System.in);
+
 		for (int i = 0; i < 5; i++) {
 			String dnltl = sc.nextLine();
 			shoppingCart.add(dnltl);
@@ -80,6 +81,7 @@ public class ArrayListEx {
 		sc.close();
 
 		System.out.println();
+
 		// 반복1 - for
 		for (int i = 0; i < shoppingCart.size(); i++) {
 			System.out.print(shoppingCart.get(i) + "\t");
@@ -101,11 +103,10 @@ public class ArrayListEx {
 
 		// 반복4 - Iterator (while)
 		Iterator<String> iterator = shoppingCart.iterator();
+
 		while (iterator.hasNext()) {
 			String item = (String) iterator.next();
 			System.out.print(item + "\t");
 		}
-
-
 	}
 }

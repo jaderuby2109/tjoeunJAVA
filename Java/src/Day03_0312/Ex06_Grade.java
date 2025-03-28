@@ -22,23 +22,23 @@ public class Ex06_Grade {
 
 		// 문자, 정수, 문장열은 switch문의 조건 값으로 가능
 		// 실수(float, double)는 조건 값으로 불가능
-		switch(grace) {
-			case "A", "a":
+		switch (grace) {
+			case "A", "a" :
 				System.out.println("100 ~ 90점 입니다.");
 				break;
-			case "B", "b":
+			case "B", "b" :
 				System.out.println("89 ~ 80점 입니다.");
 				break;
-			case "C", "c":
+			case "C", "c" :
 				System.out.println("79 ~ 70점 입니다.");
 				break;
-			case "D", "d":
+			case "D", "d" :
 				System.out.println("69 ~ 60점 입니다.");
 				break;
-			case "F", "f":
+			case "F", "f" :
 				System.out.println("60 ~ 0점 입니다.");
 				break;
-			default:
+			default :
 				System.out.println("A~D, F의 문자를 입력해 주세요.");
 				break;
 		}

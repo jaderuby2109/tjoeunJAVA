@@ -33,8 +33,7 @@ public class Account {
 	}
 
 	public void setDeposit(int deposit) {
-		if (deposit < 0)
-			return;
+		if (deposit < 0) return;
 		this.deposit = deposit;
 	}
 
@@ -65,7 +64,8 @@ public class Account {
 	// toString
 	@Override
 	public String toString() {
-		return "Account [deposit=" + deposit + ", depositor=" + depositor + ", depoNumber=" + depoNumber + ", bank=" + bank + "]";
+		return "Account [deposit=" + deposit + ", depositor=" + depositor + ", depoNumber=" + depoNumber + ", bank="
+				+ bank + "]";
 	}
 
 }

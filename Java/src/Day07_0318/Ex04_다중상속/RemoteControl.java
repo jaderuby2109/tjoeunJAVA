@@ -6,11 +6,8 @@ public interface RemoteControl {
 	int MIN_VOLUME = 0;
 
 	void turnOn();
-
 	void turnOff();
-
 	void setVolume(int volume);
-
 	void setChannel(int channel);
 
 	default void setMute(boolean mute) {

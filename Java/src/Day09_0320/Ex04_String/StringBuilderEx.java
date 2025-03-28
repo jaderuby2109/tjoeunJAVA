@@ -5,8 +5,8 @@ public class StringBuilderEx {
 	public static void main(String[] args) {
 		// StringBuilder
 		// : 문자열을 변경할 수 있는 클래스
-		// * StringBuffer		: 멀티 스레드환경에서 동기화 O
-		// * StringBuilder		: 멀티 스레드환경에서 동기화 X
+		// * StringBuffer	: 멀티 스레드환경에서 동기화 O
+		// * StringBuilder	: 멀티 스레드환경에서 동기화 X
 		StringBuilder sb = new StringBuilder();
 
 		sb.append("더조은");
@@ -28,5 +28,4 @@ public class StringBuilderEx {
 		int length = sb.length();
 		System.out.println("글자수 : " + length);
 	}
-
 }

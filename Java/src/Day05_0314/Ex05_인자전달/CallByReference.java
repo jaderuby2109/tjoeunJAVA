@@ -27,7 +27,7 @@ public class CallByReference {
 	}
 
 	public static void main(String[] args) {
-		int     arr[]   = { 1, 2, 3, 4, 5 };
+		int     arr[]   = {1, 2, 3, 4, 5};
 		PiKachu pikachu = new PiKachu();
 
 		System.out.println(":::::::::: main() 메소드 ::::::::::");

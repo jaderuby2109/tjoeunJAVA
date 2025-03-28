@@ -58,8 +58,7 @@ public class VectorEx {
 		for (int i = 0; i < bookList.size(); i++) {
 			String book = bookList.get(i);
 			System.out.print(book);
-			if (i < bookList.size())
-				System.out.print(", ");
+			if (i < bookList.size()) System.out.print(", ");
 
 		}
 		System.out.println();
@@ -80,11 +79,11 @@ public class VectorEx {
 		}
 		System.out.println();
 		System.out.println();
-		
+
 		// 다른 컬렉션을 인자로 생성 할 수 있다.
 		System.out.println("::::: 다른 컬렉션을 인자로 생성 :::::");
 		Vector<String> bookListLast = bookListAdd;
-		bookListLast.add("금도끼 은도끼") ;
+		bookListLast.add("금도끼 은도끼");
 		bookListAdd.set(1, "백설공주");
 		for (String book : bookListAdd) {
 			System.out.print(book + ", ");

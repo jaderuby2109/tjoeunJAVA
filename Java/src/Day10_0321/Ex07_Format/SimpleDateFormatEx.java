@@ -8,7 +8,7 @@ public class SimpleDateFormatEx {
 
 	public static void main(String[] args) throws ParseException {
 		/*
-		 	* 날짜 패턴 기호
+		 	날짜 패턴 기호
 			yyyy 	: 4자리 연도,			yy 	: 2자리 연도
 			MM		: 2자리 월,			M	: 1자리 월
 			dd		: 2자리 일,			d 	: 1자리 일
@@ -30,7 +30,7 @@ public class SimpleDateFormatEx {
 		// "2024/08/23" --> Date
 		Date date = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss.sss").parse(day);
 		sdf = new SimpleDateFormat("yyyy/M/d");
-		System.out.println(sdf.format(date)); // Date --> "2024/8/23"
+		System.out.println(sdf.format(date)); 	// Date --> "2025/03/21"
 
 		sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
 		System.out.println(sdf.format(date));

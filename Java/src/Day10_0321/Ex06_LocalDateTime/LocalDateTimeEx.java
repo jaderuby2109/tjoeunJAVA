@@ -18,8 +18,8 @@ public class LocalDateTimeEx {
 		System.out.println("종강\t\t: " + endDateTime);
 
 		// A.isBefore(B)	: A가 B보다 이전이면, true 아니면 false
-		// A.isEqual(B) 	: A가 B보다 같으면, true 아니면 false
-		// A.isAfter(B) 	: A가 B보다 이후이면, true 아니면 false
+		// A.isEqual(B)		: A가 B보다 같으면, true 아니면 false
+		// A.isAfter(B)		: A가 B보다 이후이면, true 아니면 false
 		if (todayDateTime.isBefore(endDateTime)) {
 			System.out.println("교육과정 진행 중입니다.");
 		} else if (todayDateTime.isAfter(endDateTime)) {
@@ -30,9 +30,9 @@ public class LocalDateTimeEx {
 
 		// until()
 		// : LocalDateTime 객체의 날짜/시간부터 인자로 지정한 객체의 날짜시간까지
-		//   남은 시간을 반환하는 메소드
+		// 남은 시간을 반환하는 메소드
 		// * ChronoUnit : 날짜/시간의 단위를 나타내는 열거타입(enum)
-		//                날짜/시간 차이를 구하거나 조작하는 데에 사용
+		// 				  날짜/시간 차이를 구하거나 조작하는 데에 사용
 		long remainYear   = todayDateTime.until(endDateTime, ChronoUnit.YEARS);
 		long remainMonth  = todayDateTime.until(endDateTime, ChronoUnit.MONTHS);
 		long remainDay    = todayDateTime.until(endDateTime, ChronoUnit.DAYS);
@@ -71,11 +71,12 @@ public class LocalDateTimeEx {
 		LocalDateTime now = LocalDateTime.now();
 		System.out.println("현재 날짜/시간\t: " + now);
 
-		LocalDateTime targetTime = now.plusYears(1).plusMonths(5).plusDays(20)
-				.plusHours(5).plusMinutes(30).plusSeconds(15)
+		LocalDateTime targetTime = now.plusYears(1).plusMonths(5).plusDays(20).plusHours(5).plusMinutes(30)
+				.plusSeconds(15)
 		// .minusYears(5)
-		// .minusXXX() 		
+		// .minusXXX()
 		;
+
 		// 빌더 패턴, (메소드 체이닝)
 		System.out.println("변경 날짜/시간\t: " + targetTime);
 	}

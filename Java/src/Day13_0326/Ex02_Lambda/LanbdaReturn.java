@@ -3,7 +3,6 @@ package Day13_0326.Ex02_Lambda;
 /**
  * 익명함수(람다식)을 메소드에서 반환할 수 있다.
  */
-
 @FunctionalInterface
 interface PrintString {
 	void showString(String msg);
@@ -35,17 +34,17 @@ public class LanbdaReturn {
 
 	private static PrintString returnLambda(int code) {
 		switch (code) {
-		case 1:
-			return msg -> System.out.println("메세지 : " + msg);
-		case 2:
-			return msg -> {
-				System.out.println("메세지 : ");
-				System.out.println(msg);
-			};
-		case 3:
-			return msg -> System.out.println(msg);
-		default:
-			return msg -> System.out.println();
+			case 1 :
+				return msg -> System.out.println("메세지 : " + msg);
+			case 2 :
+				return msg -> {
+					System.out.println("메세지 : ");
+					System.out.println(msg);
+				};
+			case 3 :
+				return msg -> System.out.println(msg);
+			default :
+				return msg -> System.out.println();
 		}
 	}
 }

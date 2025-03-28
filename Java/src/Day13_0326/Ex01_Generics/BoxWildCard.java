@@ -26,7 +26,7 @@ public class BoxWildCard {
 		Box<? extends Number> wbox2 = box2_a;
 		wbox2 = box2_b;
 		wbox2 = box2_c;
-		// Box<? extends Number> wbox2 = box1;	// (에러)
+		// Box<? extends Number> wbox2 = box1; // (에러)
 
 		Box<Raichu>  box3_a = new Box<>();
 		Box<PiKachu> box3_c = new Box<>();

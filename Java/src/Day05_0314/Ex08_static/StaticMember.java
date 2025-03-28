@@ -18,7 +18,7 @@ public class StaticMember {
 		// 객체 생성 시 메모리에 할당되므로
 		// static 메소드가 할당되는 시점에서는 접근 할 수 없다.
 		// 그래서 static 메소드에서는 인스턴스 멤버를 접근 할 수 없다.
-		// sum += c;	
+		// sum += c;
 		return sum;
 	}
 

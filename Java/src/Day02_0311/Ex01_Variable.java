@@ -4,7 +4,7 @@ public class Ex01_Variable {
 
 	public static void main(String[] args) {
 
-		// 변수 선언 
+		// 변수 선언
 		// - 자료형 변수명;
 
 		// 변수 선언 및 초기화
@@ -26,7 +26,7 @@ public class Ex01_Variable {
 
 		// x + y
 		// x, y : 피연산자
-		// +  : 연산자
+		// + : 연산자
 		System.out.println("x : " + x);
 		System.out.println("y : " + y);
 
@@ -40,7 +40,7 @@ public class Ex01_Variable {
 		// 우선순위에 따라서 알맞게 ()를 지정해서 사용한다.
 		// 사칙연산 우선순위
 		// *, / : 연산 우선순위 먼저
-		// +, - : 연산 우선순위 나중 
+		// +, - : 연산 우선순위 나중
 
 	}
 }

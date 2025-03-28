@@ -19,10 +19,10 @@ public class Ex02_Char {
 
 		// 작은 자료형과 큰 자료형을 연산하면 그 결과는 큰 자료형이 된다
 		// (작은 자료형) + (큰 자료형) = (큰 자료형)
-		// (c2 + 1) 	: (char) + (int) = (int)	자동 형변환
-		// b = (c2 + 1) : (char) = (char) (int)		강제 형변환 (명시적 형변환)
+		// (c2 + 1)		: (char) + (int) = (int) 자동 형변환
+		// b = (c2 + 1) : (char) = (char) (int) 강제 형변환 (명시적 형변환)
 		char b = (char) (c2 + 1);
-		
+
 		System.out.println("c1 : " + c1);
 		System.out.println("c2 : " + c2);
 		System.out.println("c3 : " + c3);

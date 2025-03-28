@@ -8,11 +8,12 @@ public class IntegerEx {
 		// : 정수 타입인 int 기본 타입을 객체화한 클래스
 		int     a = 10;
 		Integer A = 100;
+		// (추천하지 않음) Integer B = new Integer(100);
 
 		// * 주요 메소드
-		// (문자열) 	--> (정수)
-		// (정수)	--> (문자열)
-		// (정수)	--> (다른타입)
+		// (문자열) --> (정수)
+		// (정수) --> (문자열)
+		// (정수) --> (다른타입)
 		System.out.println(Integer.parseInt("28") + 2);  	// 문자열->정수
 		System.out.println(Integer.toString(28) + 2);	   	// 정수->문자열
 		System.out.println(28 + "");					   	// 정수->문자열
@@ -30,8 +31,9 @@ public class IntegerEx {
 		int     value = i.intValue();			// 언박싱
 		// * 오토 언박싱(Auto UnBoxing)
 		// : Wrapper 클래스 객체의 값을 자동으로 꺼내서 해당 기본 타입에 대입해준다.
-		int value2 = i;						// 언박싱 (오토 언박싱)
+		int value2 = i;							// 언박싱 (오토 언박싱)
 		System.out.println("객체로 생성한 Integer : " + i);
 		System.out.println("기본 타입 int : " + value);
+		System.out.println("기본 타입 int : " + value2);
 	}
 }

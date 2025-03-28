@@ -1,6 +1,6 @@
 package Day07_0318.Ex02_Builder;
 
-public class Picachu {
+public class Pikachu {
 
 	// 변수
 	private int    energy;
@@ -8,7 +8,7 @@ public class Picachu {
 	private int    level;
 
 	// private 생성자
-	public Picachu(Builder builder) {
+	public Pikachu(Builder builder) {
 		this.energy = builder.energy;
 		this.type   = builder.type;
 		this.level  = builder.level;
@@ -19,7 +19,7 @@ public class Picachu {
 		return "Picachu [energy=" + energy + ", type=" + type + ", level=" + level + "]";
 	}
 
-	// Builder 클래스를 static 클래스로 정의
+	// Builder 클래스를 static 이너 클래스로 정의
 	public static class Builder {
 
 		private int    energy;
@@ -52,8 +52,9 @@ public class Picachu {
 			return this;
 		}
 
-		public Picachu build() {
-			return new Picachu(this);
+		// 객체를 생성해주는 메소드
+		public Pikachu build() {
+			return new Pikachu(this);
 		}
 	}
 }

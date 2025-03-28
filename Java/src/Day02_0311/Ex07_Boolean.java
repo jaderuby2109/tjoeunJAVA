@@ -30,7 +30,5 @@ public class Ex07_Boolean {
 		} else {
 			System.out.println("전원 OFF");
 		}
-
 	}
-
 }

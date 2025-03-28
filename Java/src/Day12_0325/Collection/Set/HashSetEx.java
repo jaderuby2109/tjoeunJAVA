@@ -22,7 +22,7 @@ public class HashSetEx {
 
 		System.out.println("::::: 추가 :::::");
 		// Set 컬렉션은 중복된 요소를 저장하지 않는다.(중복불가)
-		// - 이미 존재하는  3, 5는 추가하면 저장되지 않고 false 를 반환한다.
+		// - 이미 존재하는 3, 5는 추가하면 저장되지 않고 false 를 반환한다.
 		System.out.println(set.add(3));
 		System.out.println(set.add(5));
 		System.out.println(set);
@@ -36,7 +36,6 @@ public class HashSetEx {
 		System.out.println(set);
 		System.out.println(set.remove(10));
 		System.out.println("size(개수) : " + set.size());
-
 
 	}
 }

@@ -9,10 +9,10 @@ public class Ex11_ArithmeticOperator {
 		System.out.println("5 * 4	: " + (5 * 4));
 		System.out.println("16 / 2	: " + (16 / 2));
 
-		System.out.println("10 % 6	: " + (10 % 6));	// 1.  
-		System.out.println("1 % 5	: " + (1 % 5));		// 2. 
-		System.out.println("2 % 5	: " + (2 % 5));		// 3. 
-		System.out.println("3 % 5	: " + (3 % 5));		// 4. 
+		System.out.println("10 % 6	: " + (10 % 6));	// 1.
+		System.out.println("1 % 5	: " + (1 % 5));		// 2.
+		System.out.println("2 % 5	: " + (2 % 5));		// 3.
+		System.out.println("3 % 5	: " + (3 % 5));		// 4.
 		System.out.println();
 	}
 }

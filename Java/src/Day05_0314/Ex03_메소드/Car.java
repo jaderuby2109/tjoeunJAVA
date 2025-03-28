@@ -25,9 +25,9 @@ public class Car {
 	}
 
 	// getter & setter
-	// - getter	: 변수의 값을 가져오는 메소드
-	// - setter	: 변수의 값을 지정하는 메소드
-	// getter & setter 이름	: getXXX(), setXXX()
+	// - getter : 변수의 값을 가져오는 메소드
+	// - setter : 변수의 값을 지정하는 메소드
+	// getter & setter 이름 : getXXX(), setXXX()
 	// * alt + shift + S : R
 	public String getModel() {
 		return model;
@@ -52,5 +52,4 @@ public class Car {
 		}
 		this.speed = speed;
 	}
-
 }

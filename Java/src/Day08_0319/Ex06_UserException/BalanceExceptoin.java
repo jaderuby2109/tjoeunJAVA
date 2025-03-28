@@ -4,11 +4,9 @@ package Day08_0319.Ex06_UserException;
 // - public class XXXException extends Exception { }
 public class BalanceExceptoin extends Exception {
 
-	public BalanceExceptoin() {
-	}
+	public BalanceExceptoin() {}
 
 	public BalanceExceptoin(String message) {
 		super(message);
 	}
-
 }

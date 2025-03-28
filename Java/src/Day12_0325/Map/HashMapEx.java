@@ -42,8 +42,8 @@ public class HashMapEx {
 		System.out.println();
 
 		// 반복2 - Iterator 사용
-		// map.entrySet()		: iterator() 메소드를 가진 Set 객체 반환
-		// entrySet.iterator()	: Map 컬렉션을 순차 검색할 수 있는 iterator 객체 반환
+		// map.entrySet() : iterator() 메소드를 가진 Set 객체 반환
+		// entrySet.iterator() : Map 컬렉션을 순차 검색할 수 있는 iterator 객체 반환
 		// * Entry : 키와 값(key, value)을 한 쌍으로 저장한 자료 구조
 		Set<Map.Entry<String, Integer>>      entrySet      = map.entrySet();
 		Iterator<Map.Entry<String, Integer>> entryIterator = entrySet.iterator();
@@ -68,6 +68,5 @@ public class HashMapEx {
 		System.out.println("총 개수 : " + map.size());
 		map.clear();
 		System.out.println("empty 여부 : " + map.isEmpty());
-
 	}
 }

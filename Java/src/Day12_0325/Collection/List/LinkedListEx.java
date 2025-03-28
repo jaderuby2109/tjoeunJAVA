@@ -3,9 +3,10 @@ package Day12_0325.Collection.List;
 import java.util.LinkedList;
 
 class Product {
-	String name; // 상품명
-	int    price;// 가격
-	int    count; // 재고수
+
+	String name;	// 상품명
+	int    price;	// 가격
+	int    count;	// 재고수
 
 	public Product(String name, int price, int count) {
 		this.name  = name;
@@ -17,7 +18,6 @@ class Product {
 	public String toString() {
 		return "Product [name=" + name + ", price=" + price + ", count=" + count + "]";
 	}
-	
 }
 
 public class LinkedListEx {

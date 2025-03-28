@@ -7,7 +7,7 @@ import java.util.Random;
 public class ArraysEx {
 
 	public static void main(String[] args) {
-		Integer[] arr = { 5, 3, 4, 1, 2 };
+		Integer[] arr = {5, 3, 4, 1, 2};
 
 		// 배열 정렬 (sort) - 오름차순
 		Arrays.sort(arr);
@@ -29,7 +29,7 @@ public class ArraysEx {
 		// - 이진 탐색 알고리즘을 사용하여 탐색한 후,
 		// 1. 해당 값이 있으면, 그 위치(index)를 반환
 		// 2. 해당 값이 없으면, ( -insertion point -1 ) 음수를 반환
-		// * insertion point 
+		// * insertion point
 		// : 해당 값이 배열이 있다고 가정했을 때, 정렬에 따라 삽입되어야할 위치
 
 		// 1~100 사이의 랜덤 정수 수열을 만들고,
@@ -71,7 +71,7 @@ public class ArraysEx {
 		// Arrays.copyOf(배열, 길이)
 		// : 배열을 앞에서 부터 (길이)개의 요소를 복사하여 새 배열로 반환
 		int copy[] = Arrays.copyOf(fill, 3);
-		// 8 8 8 8 8  8 8 8 8 8 
+		// 8 8 8 8 8  8 8 8 8 8
 		// 8 8 8 을 복사하여 반환
 		for (int i = 0; i < copy.length; i++) {
 			System.out.print(copy[i] + " ");
@@ -80,7 +80,7 @@ public class ArraysEx {
 
 		// Arrays.copyOfRange(배열, 시작index, 끝index+1)
 		// : 배열을 시작index~끝index 까지의 요소를 복사하여 새 배열로 반환
-		int copyRange[] = Arrays.copyOfRange(random, 11, 21);	// index 11~20 까지 복사 
+		int copyRange[] = Arrays.copyOfRange(random, 11, 21);	// index 11~20 까지 복사
 
 		for (int i = 0; i < copyRange.length; i++) {
 			System.out.print(copyRange[i] + " ");

@@ -1,13 +1,9 @@
-package Day09_0320.패키지;
+package Day09_0320.Ex05_AutoImport;
 
 public class Food extends Product {
 
 	String Kcal;	// 칼로리
 	String taste;	// 맛
-
-	// 생성자
-	public Food() {
-	}
 
 	// getter, setter
 	public String getKcal() {

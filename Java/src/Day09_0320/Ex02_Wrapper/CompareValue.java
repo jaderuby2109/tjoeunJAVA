@@ -13,7 +13,7 @@ public class CompareValue {
 
 		// Q. intObj1 객체와 intObj2 객체의 인스턴스가 같은가?
 		// A. byte 범위 안에서는 같은 레퍼런스(인스턴스)로 생성된다.
-		// * byte(8bits)  - (-128~127)범위에서는 같은 인스턴스가 된다.
+		// * byte(8bits) - (-128~127)범위에서는 같은 인스턴스가 된다.
 		System.out.println("레퍼런스 비교");
 		System.out.println("결과 : " + (intObj1 == intObj2));
 
@@ -51,5 +51,4 @@ public class CompareValue {
 		System.out.println(p1 == p2);
 
 	}
-
 }

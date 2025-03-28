@@ -15,8 +15,7 @@ public class Ex17_Break {
 
 			// 문자열.equals("비교 문자열")
 			// : 문자열이 비교 문자열과 일치하는지 여부를 알려주는 메소드
-			if ("STOP".equals(input))
-				break;
+			if ("STOP".equals(input)) break;
 
 			System.out.println(">> " + input);
 		}

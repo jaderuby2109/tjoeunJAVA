@@ -9,7 +9,7 @@ import java.util.Queue;
  * 가게에 방문한 손님들의 웨이팅 관리를 하는 프로그램을 만든다.
  */
 public class ShopQueue {
-	// 큐 자료구조를 컬렉션으로 사용할 때는 
+	// 큐 자료구조를 컬렉션으로 사용할 때는
 	// LinkedList로 객체를 생성하고 Queue 인터페이스 타입으로 선언한다.
 
 	private Queue<String> customerQueue = new LinkedList<String>();
@@ -22,6 +22,7 @@ public class ShopQueue {
 
 	// 손님 입장
 	public void serve() {
+
 		if (!customerQueue.isEmpty()) {
 			String servedCustomer = customerQueue.poll();	// 큐 데이터 삭제 (dequeue)
 			System.out.println("서빙중인 손님\t: " + servedCustomer);
@@ -42,43 +43,24 @@ public class ShopQueue {
 		}
 		System.out.println("------------------------");
 	}
-	
+
 	public static void main(String[] args) {
-		ShopQueue shopQueue= new ShopQueue();
+		ShopQueue shopQueue = new ShopQueue();
 		shopQueue.wait("김씨");
 		shopQueue.wait("이씨");
 		shopQueue.wait("박씨");
-		
+
 		shopQueue.showWaitingList();
-		
+
 		shopQueue.serve();
 		shopQueue.wait("최씨");
 		shopQueue.showWaitingList();
-		
+
 		shopQueue.serve();
 		shopQueue.serve();
-		
+
 		shopQueue.showWaitingList();
 		shopQueue.serve();
 		shopQueue.serve();
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

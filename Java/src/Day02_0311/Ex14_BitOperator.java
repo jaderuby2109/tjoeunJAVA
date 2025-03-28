@@ -37,12 +37,12 @@ public class Ex14_BitOperator {
 		System.out.println();
 
 		// 왼쪽 시프트 연산 (<<)
-		int a = 5;
+		int a       = 5;
 		int result4 = a << 1;
 		System.out.println(a + " << 1	: " + result4);
 
 		// 오른쪽 시프트 연산 (>>)
-		int b = 10;
+		int b       = 10;
 		int result5 = b >> 2;
 		System.out.println(b + " >> 2	: " + result5);
 

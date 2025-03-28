@@ -17,7 +17,6 @@ public class LottoArrayList {
 
 			ArrayList<Integer> lottoSet = new ArrayList<Integer>();
 
-
 			System.out.print("[" + (i + 1) + "게임] : ");
 
 			// -랜덤수 6개 대입
@@ -25,11 +24,11 @@ public class LottoArrayList {
 				int rand = (int) (Math.random() * 45) + 1;
 
 				// 중복 제거
-				if (lottoSet.contains(rand))		j--;
-				else							lottoSet.add(rand);
+				if (lottoSet.contains(rand)) j--;
+				else lottoSet.add(rand);
 			}
 
-			// 정렬 
+			// 정렬
 			Collections.sort(lottoSet);
 
 			// 출력

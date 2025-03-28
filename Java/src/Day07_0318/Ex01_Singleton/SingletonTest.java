@@ -4,7 +4,7 @@ public class SingletonTest {
 
 	public static void main(String[] args) {
 		// new 로 생성 불가
-		// Singleton singleton  = new Singleton();
+		// ( 에러 ) Singleton singleton = new Singleton();
 		Singleton singleton1 = Singleton.getInstance();
 		Singleton singleton2 = Singleton.getInstance();
 

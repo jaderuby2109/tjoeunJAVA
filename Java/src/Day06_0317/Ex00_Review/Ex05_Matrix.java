@@ -11,10 +11,10 @@ public class Ex05_Matrix {
 		// (입력 예시)
 		// M : 2
 		// N : 3
-		// 1 2 3 
+		// 1 2 3
 		// 4 5 6
 		// (출력 예시)
-		// 1 2 3 
+		// 1 2 3
 		// 4 5 6
 
 		Scanner sc = new Scanner(System.in);
@@ -30,8 +30,8 @@ public class Ex05_Matrix {
 
 		// 입력
 		// 2차원 배열은 이중반복문으로 접근한다.
-		// 바깥쪽 반복문 		: i : 행 접근
-		// 안쪽 반복문 		: j : 열 접근
+		// 바깥쪽 반복문		: i : 행 접근
+		// 안쪽 반복문			: j : 열 접근
 		// arr.length		: 행의 개수
 		// arr[i].length	: 열의 개수
 		for (int i = 0; i < arr.length; i++) {

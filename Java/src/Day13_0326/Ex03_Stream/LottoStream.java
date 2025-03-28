@@ -23,7 +23,7 @@ public class LottoStream {
 				lottoSet.add(rand);
 			}
 
-			// 정렬 
+			// 정렬, 출력
 			lottoSet.stream().sorted().forEach(lotto -> System.out.print(lotto + " "));
 
 			System.out.println();

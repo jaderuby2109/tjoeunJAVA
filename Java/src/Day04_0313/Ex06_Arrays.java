@@ -51,7 +51,7 @@ public class Ex06_Arrays {
 		}
 		System.out.println();
 
-		int three[][][] = { { { 1, 2 }, { 3, 4 } }, { { 5, 6 }, { 7, 8 } }, { { 9, 10 }, { 11, 12 } } };
+		int three[][][] = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}, {{9, 10}, {11, 12}}};
 
 		for (int[][] two : three) {
 			for (int[] one : two) {

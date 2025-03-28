@@ -8,9 +8,9 @@ public class MessageFormatEx {
 	public static void main(String[] args) {
 		// MessageFormat
 		// : 문자열 형식을 만들고, 문자열에 따라 들어갈 자리를
-		//   {k} 로 표시하여 형식을 지정한다. (k : 0~)
-		//   \n : 한 줄 개행(엔터)
-		//   \t : 탭
+		// {k} 로 표시하여 형식을 지정한다. (k : 0~)
+		// \n : 한 줄 개행(엔터)
+		// \t : 탭
 
 		String  text = "아이디 : {0}\n비밀번호 : {1}";
 		Scanner sc   = new Scanner(System.in);
@@ -27,7 +27,7 @@ public class MessageFormatEx {
 		System.out.println(login);
 		System.out.println();
 
-		String[] studentInfo   = { "김조은", "25학번", "컴퓨터공학과", "20살" };
+		String[] studentInfo   = {"김조은", "25학번", "컴퓨터공학과", "20살"};
 		String   studentFormat = "이름 : {0} \n" + "학번 : {1} \n" + "전공 : {2} \n" + "나이 : {3} \n";
 		String   student       = MessageFormat.format(studentFormat, studentInfo);
 		System.out.println(student);

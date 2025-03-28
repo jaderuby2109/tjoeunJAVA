@@ -48,5 +48,4 @@ public class Rectangle extends Shape {
 	public String toString() {
 		return "Rectangle [width=" + width + ", height=" + height + "]";
 	}
-
 }

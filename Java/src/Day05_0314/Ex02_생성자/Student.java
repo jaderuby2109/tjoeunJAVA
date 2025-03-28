@@ -1,8 +1,8 @@
 package Day05_0314.Ex02_생성자;
 
 // 학생
-// - 변수	: 이름, 나이, 학번, 전공
-// - 메소드	: 공부하기, 성적 평균 구하기
+// - 변수 : 이름, 나이, 학번, 전공
+// - 메소드 : 공부하기, 성적 평균 구하기
 public class Student {
 
 	// 변수
@@ -14,8 +14,8 @@ public class Student {
 	// 생성자
 	// 기본 생성자 alt + shift + S -> 0
 	public Student() {
-		// this.name  = "이름없음";
-		// this.age   = 0;
+		// this.name = "이름없음";
+		// this.age = 0;
 		// this.stdNo = "00000000";
 		// this.magor = "전공없음";
 		// this("이름없음", 0, "00000000", "전공없음");
@@ -24,8 +24,8 @@ public class Student {
 	}
 
 	public Student(String name, int age) {
-		// this.name  = name;
-		// this.age   = age;
+		// this.name = name;
+		// this.age = age;
 		// this.magor = "전공없음";
 		// this.stdNo = "00000000";
 		this(name, age, "00000000", "전공없음");
@@ -76,5 +76,4 @@ public class Student {
 		System.out.println(stuNum + " - 학번 : " + this.stdNo);
 		System.out.println();
 	}
-
 }

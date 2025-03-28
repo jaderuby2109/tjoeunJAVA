@@ -4,6 +4,7 @@ public class Person {
 	String name;
 	int    age;
 
+	// 생성자
 	public Person() {
 		this("이름없음", 1);
 	}
@@ -40,5 +41,4 @@ public class Person {
 	public String toString() {
 		return "Person [name=" + name + ", age=" + age + "]";
 	}
-
 }

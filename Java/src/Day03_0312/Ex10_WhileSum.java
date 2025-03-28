@@ -22,6 +22,5 @@ public class Ex10_WhileSum {
 			sum += a++;
 		}
 		System.out.println("합계 : " + sum);
-
 	}
 }

@@ -20,13 +20,9 @@ public class StreamArrayList {
 		// * 이름(name) 만 추출(매핑)하여 반복
 		productList.stream()
 				// 추출
-				.map((product) -> {
-					return product.getName();
-				})
+				.map((product) -> { return product.getName(); })
 				// 반복
-				.forEach((name) -> {
-					System.out.println("[" + name + "]");
-				});
+				.forEach((name) -> { System.out.println("[" + name + "]"); });
 
 		System.out.println();
 
@@ -38,7 +34,7 @@ public class StreamArrayList {
 		System.out.println();
 
 		// filter - 필터
-		// : 스트림 요소에서 조건에 맞는 요소만 선택하는 연산 
+		// : 스트림 요소에서 조건에 맞는 요소만 선택하는 연산
 		// * 가격이 2000원 이상인 상품만 필터링하여 반복
 		productList.stream()
 				// 조건
@@ -56,11 +52,11 @@ public class StreamArrayList {
 		System.out.println();
 
 		// sorted - 정렬
-		// : 스트림 요소에서 지정한 기준에 따라 
+		// : 스트림 요소에서 지정한 기준에 따라
 		// 요소들을 오름차순 / 내림차순 정렬하는 연산
 		System.out.println("이름순 정렬 (오름차순)");
 		productList.stream()
-				// 정렬 조건 이름순 
+				// 정렬 조건 이름순
 				.sorted(Comparator.comparing(p -> p.getName()))
 				// 반복
 				.forEach(p -> System.out.println(p));
@@ -68,8 +64,8 @@ public class StreamArrayList {
 
 		System.out.println("이름순 정렬 (내림차순)");
 		productList.stream()
-				// 정렬 조건 이름순 
-				//	.sorted(Comparator.comparing(p -> p.getName()).reversed())
+				// 정렬 조건 이름순
+				// .sorted(Comparator.comparing(p -> p.getName()).reversed())
 				.sorted(Comparator.comparing(Product::getName).reversed())
 				// 반복
 				.forEach(p -> System.out.println(p));
@@ -77,7 +73,7 @@ public class StreamArrayList {
 
 		System.out.println("가격순 정렬 (오름차순)");
 		productList.stream()
-				// 정렬 조건 가격순 
+				// 정렬 조건 가격순
 				.sorted(Comparator.comparing(p -> p.getPrice()))
 				// 반복
 				.forEach(p -> System.out.println(p));
@@ -85,7 +81,7 @@ public class StreamArrayList {
 
 		System.out.println("가격순 정렬 (내림차순)");
 		productList.stream()
-				// 정렬 조건 가격순 
+				// 정렬 조건 가격순
 				.sorted(Comparator.comparing(Product::getPrice).reversed())
 				// 반복
 				.forEach(p -> System.out.println(p));
@@ -103,11 +99,11 @@ public class StreamArrayList {
 		System.out.println("이름이 4글자 이상인 사람들의 수 : " + count);
 
 		// sum() 스트림 요소의 합계
-		//* 가격이 2000원 미만인 상품들의 가격 합계
+		// * 가격이 2000원 미만인 상품들의 가격 합계
 		int sum = productList.stream()
 				// 조건
 				.filter(p -> p.getPrice() < 2000)
-				// 숫자 형식으로 
+				// 숫자 형식으로
 				.mapToInt(p -> p.getPrice())
 				// 합계
 				.sum();

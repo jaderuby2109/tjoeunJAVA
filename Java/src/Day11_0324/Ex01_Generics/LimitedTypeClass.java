@@ -1,22 +1,39 @@
 package Day11_0324.Ex01_Generics;
 
-class X { }
-class A extends X { }
-class B extends A { }
-class C extends A { }
+class X {}
 
-class D <T extends A> {
-	private T t ;
-	public T getT() { System.out.println("D : getT"); return t; }
-	public void setT(T t) { System.out.println("D : setT"); this.t = t; } 
+class A extends X {}
+class B extends A {}
+class C extends A {}
+
+class D<T extends A> {
+
+	private T t;
+
+	public T getT() {
+		System.out.println("D : getT");
+		return t;
+	}
+
+	public void setT(T t) {
+		System.out.println("D : setT");
+		this.t = t;
+	}
 }
 
 // Number 클래스 타입 매개변수로 사용 가능하도록 제한
 // Integer, Double 등 숫자타입 클래스만 사용 가능하도록 제한)
 class E<T extends Number> {
-	private T t ;
-	public T getT() { return t; }
-	public void setT(T t) { this.t = t; } 
+
+	private T t;
+
+	public T getT() {
+		return t;
+	}
+
+	public void setT(T t) {
+		this.t = t;
+	}
 }
 
 public class LimitedTypeClass {
@@ -66,5 +83,4 @@ public class LimitedTypeClass {
 		e3.setT((byte) 127);
 		System.out.println(e1.getT());
 	}
-
 }

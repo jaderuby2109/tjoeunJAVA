@@ -36,7 +36,5 @@ public class Ex09_While {
 			a++;	// 증감연산자
 		}
 		System.out.println();
-
 	}
-
 }

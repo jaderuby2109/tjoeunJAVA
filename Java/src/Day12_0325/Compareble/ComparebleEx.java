@@ -32,42 +32,39 @@ class Book implements Comparable<Book> {
 	 * compareTo()
 	 * - 해당 객체 this와 비교 객체 o의 크기 기준을 설정하여 반환하는 메소드
 	 * return
-	 * 양수(1) : 해당객체 > 비교객체
-	 * 0 : 해당객체 = 비교객체
-	 * 음수(-1) : 해당객체 < 비교객체
+	 * 양수(1)	: 해당객체 > 비교객체
+	 * 0		: 해당객체 = 비교객체
+	 * 음수(-1)	: 해당객체 < 비교객체
 	 */
 	@Override
 	public int compareTo(Book o) {
 		int asc  = 1;
 		int desc = -1;
+		
 		// 가격순 오름차순 정렬
 		int thisPrice = this.price;
 		int comPrice  = o.price;
 
 		// 두 가격을 비교하여, 비교 기준에 따라 리턴
 		// 방법 1
-		if (thisPrice > comPrice)
-			return asc;
-		else if (thisPrice == comPrice)
-			return 0;
-		else
-			return desc;
+		if (thisPrice > comPrice) return asc;
+		else if (thisPrice == comPrice) return 0;
+		else return desc;
 
-//		// 방법2
-//		if (thisPrice > comPrice)	return asc;
-//		if (thisPrice == comPrice)	return 0;
-//		if (thisPrice < comPrice)	return desc;
-//		return 0 ;
-//
-//		// 방법3
-//		asc  = thisPrice - comPrice;	// 오름차순
-//		desc = comPrice - thisPrice;	// 내림차순
-//
-//		// 방법4
-//		return (thisPrice > comPrice) ? asc : (thisPrice < comPrice) ? desc : 0;
-		
-		
-		// <가격이 같을 때 제목 순>
+		// // 방법2
+		// if (thisPrice > comPrice) return asc;
+		// if (thisPrice == comPrice) return 0;
+		// if (thisPrice < comPrice) return desc;
+		// return 0 ;
+		//
+		// // 방법3
+		// asc = thisPrice - comPrice; // 오름차순
+		// desc = comPrice - thisPrice; // 내림차순
+		//
+		// // 방법4
+		// return (thisPrice > comPrice) ? asc : (thisPrice < comPrice) ? desc : 0;
+
+		// TODO <가격이 같을 때 제목 순>
 	}
 }
 

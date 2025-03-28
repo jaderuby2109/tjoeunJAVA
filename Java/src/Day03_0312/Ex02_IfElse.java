@@ -20,9 +20,9 @@ public class Ex02_IfElse {
 		sc.close();
 
 		// if (num % 2 == 1) {
-		// 	System.out.println("홀수 입니다.");
+		// System.out.println("홀수 입니다.");
 		// } else {
-		// 	System.out.println("짝수 입니다.");
+		// System.out.println("짝수 입니다.");
 		// }
 
 		if (num % 2 == 1)

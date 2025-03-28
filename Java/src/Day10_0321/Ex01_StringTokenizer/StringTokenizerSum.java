@@ -11,6 +11,7 @@ public class StringTokenizerSum {
 	public static void main(String[] args) {
 		Scanner sc    = new Scanner(System.in);
 		String  input = sc.nextLine();
+		sc.close();
 
 		// 입력받은 문자열을 + 를 기준으로 토큰으로 분리한다
 		StringTokenizer st  = new StringTokenizer(input, "+");
@@ -22,6 +23,5 @@ public class StringTokenizerSum {
 			sum += item;								// 합계 구하기
 		}
 		System.out.println("합계 : " + sum);
-		sc.close();
 	}
 }

@@ -22,20 +22,16 @@ public class IndexOutOfBoundsEx {
 		System.out.print("입력 할 값 : ");
 		int input = sc.nextInt();
 
+		sc.close();
+
 		// 예외 메세지	: java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
 		// 예외 상황	: 배열의 index 범위를 초과하여 접근하는 경우
-
 		try {
 			arr[index] = input;
 			System.out.println("arr[" + index + "]" + arr[index]);
 		} catch (ArrayIndexOutOfBoundsException e) {
-			sc.next(); // 입력 스트림 비우기
-			System.err.println(e.getMessage());
 			System.err.println("배열의 index 범위를 초과하여 접근하였습니다.");
 			System.err.println("(0 ~ " + (N - 1) + ") 사이의 정수 범위에서 입력해 주세요.");
 		}
-
-		sc.close();
-
 	}
 }

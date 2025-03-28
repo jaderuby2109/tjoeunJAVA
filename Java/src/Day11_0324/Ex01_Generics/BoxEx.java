@@ -14,10 +14,10 @@ public class BoxEx {
 		String boxName = box1.getT();
 		System.out.println("box1 : " + boxName);
 
-		Box<PiKachu> box2 = new Box<PiKachu>();
-		box2.setT(new PiKachu());
-		PiKachu picachu = box2.getT();
-		System.out.println("picachu : " + picachu);
+		Box<PiKachu> monsterBall = new Box<PiKachu>();
+		monsterBall.setT(new PiKachu());
+		PiKachu pikachu = monsterBall.getT();
+		System.out.println("pikachu : " + pikachu);
 
 		// Box<int> numBox = new Box<int>();
 		// * 제네릭 기법의 타입으로는 "참조자료형"만 사용할 수 있다.
@@ -27,7 +27,7 @@ public class BoxEx {
 		System.out.println("int : " + numCount);
 
 		Box<int[]> snackBox = new Box<int[]>();
-		snackBox.setT(new int[] { 1, 2, 3, 4, 5 });
+		snackBox.setT(new int[]{1, 2, 3, 4, 5});
 		int[] snackArr = snackBox.getT();
 		for (int i : snackArr) {
 			System.out.print(i + " ");

@@ -6,7 +6,6 @@ public class I {
 	// * 중첩 인터페이스에 static 생략하면, 컴파일러가 자동으로 추가한다.
 	static interface J {
 		void methodA();
-
 		void methodB();
 	}
 

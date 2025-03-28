@@ -18,15 +18,25 @@ package Day05_0314.Ex03_메소드;
 public class Calculator {
 
 	// 덧셈
-	int plus(int num1, int num2) {				return num1 + num2;	}
+	int plus(int num1, int num2) {
+		return num1 + num2;
+	}
 	// 뺄셈
-	int minus(int num1, int num2) {				return num1 - num2;	}
+	int minus(int num1, int num2) {
+		return num1 - num2;
+	}
 	// 곱셈
-	double multiple(double num1, double num2) {	return num1 * num2;	}
+	double multiple(double num1, double num2) {
+		return num1 * num2;
+	}
 	// 나눗셈
-	double divide(double num1, double num2) {	return num1 / num2;	}
+	double divide(double num1, double num2) {
+		return num1 / num2;
+	}
 	// 나머지
-	int remain(int num1, int num2) {			return num1 % num2;	}
+	int remain(int num1, int num2) {
+		return num1 % num2;
+	}
 
 	// 합계
 	int sum(int arr[]) {

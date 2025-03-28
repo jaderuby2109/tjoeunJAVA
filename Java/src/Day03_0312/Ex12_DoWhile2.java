@@ -28,8 +28,7 @@ public class Ex12_DoWhile2 {
 
 			// break : 제어문을 탈출하는 키워드
 			// * 가장 가까운 제어문만 탈출한다.
-			if (menuNo == 0)
-				break;
+			if (menuNo == 0) break;
 
 			// 유효성 검사
 			// - 메뉴 번호가 0 ~ 5번만 유효

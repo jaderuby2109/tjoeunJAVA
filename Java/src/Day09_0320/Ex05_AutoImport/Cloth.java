@@ -1,13 +1,9 @@
-package Day09_0320.패키지;
+package Day09_0320.Ex05_AutoImport;
 
 public class Cloth extends Product {
 
 	String color;	// 색상
 	String size;	// 사이즈 S M L
-
-	// 생성자
-	public Cloth() {
-	}
 
 	// getter, setter
 	public String getColor() {

@@ -5,7 +5,6 @@ package Day13_0326.Ex02_Lambda;
  * - 최댓값
  * - 합계
  */
-
 @FunctionalInterface
 interface SmartCalc {
 	int calc(int x, int y);
@@ -14,14 +13,14 @@ interface SmartCalc {
 public class LambdaParameter {
 
 	public static void main(String[] args) {
-		// 최댓값	: x, y 중 가장 큰 값
+		// 최댓값 : x, y 중 가장 큰 값
 		// SmartCalc sc1 = (x, y) -> { return x > y ? x : y ; } ;
 		SmartCalc sc1 = (x, y) -> x > y ? x : y;
 
 		// 최솟값
 		SmartCalc sc3 = (x, y) -> x > y ? y : x;
 
-		// 합계	: 정수 x 부터 y 까지의 합계
+		// 합계 : 정수 x 부터 y 까지의 합계
 		SmartCalc sc2 = (x, y) -> {
 			int max = sc1.calc(x, y);
 			int min = sc3.calc(x, y);
@@ -47,21 +46,4 @@ public class LambdaParameter {
 		int result = sm.calc(a, b);
 		System.out.println("result : " + result);
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

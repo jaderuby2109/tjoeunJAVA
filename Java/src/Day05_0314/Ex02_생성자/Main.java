@@ -48,7 +48,7 @@ public class Main {
 		System.out.println("학생4 - 전공 : " + student4.magor);
 		System.out.println("학생4 - 학번 : " + student4.stdNo);
 
-		int scores4[] = { 100, 80, 70, 65, 95 };
+		int scores4[] = {100, 80, 70, 65, 95};
 		System.out.println("학생4 - 중간고사 점수 : " + student4.getAverage(100, 90, 70));
 		System.out.println("학생4 - 중간고사 점수 : " + student4.getAverage(scores4));
 	}

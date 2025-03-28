@@ -15,8 +15,8 @@ public class DateEx {
 		System.out.println("Date 문자열 기본 포맷\t: " + dateStr);
 
 		// 날짜/시간 문자
-		// yyyy	: 년도,		MM : 월,		 dd : 일
-		// hh	: 시,		mm : 분,		 ss : 초
+		// yyyy : 년도,	MM : 월, dd : 일
+		// hh : 시,		mm : 분, ss : 초
 		String           dateFormat = "yyyy년 MM월 dd일 hh시 mm분 ss초";
 		SimpleDateFormat sdf        = new SimpleDateFormat(dateFormat);
 		String           nowStr     = sdf.format(now);
@@ -27,6 +27,7 @@ public class DateEx {
 
 		Date date = new Date(day1);
 		System.out.println("new Date(day1)\t\t: " + date);
+
 		Date date1 = new SimpleDateFormat("yyyy/MM/dd").parse(day1);
 		Date date2 = new SimpleDateFormat("yyyy/MM/dd").parse(day2);
 

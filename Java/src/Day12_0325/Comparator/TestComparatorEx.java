@@ -1,17 +1,13 @@
 package Day12_0325.Comparator;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
-
 
 /**
  * 1. Comparator 인터페이스 구현
  * 2. compare() 메소드 오버라이딩
- * 		- 정렬 기준 1 : 나이순 내림차순
- * 		- 정렬 기준 2 : 이름순 오름차순
+ * - 정렬 기준 1 : 나이순 내림차순
+ * - 정렬 기준 2 : 이름순 오름차순
  */
 class MyUser {
 
@@ -19,8 +15,7 @@ class MyUser {
 	String name;
 	int    age;
 
-	public MyUser() {
-	}
+	public MyUser() {}
 
 	public MyUser(String id, String name, int age) {
 		this.id   = id;
@@ -40,7 +35,6 @@ class MyUser {
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", age=" + age + "]";
 	}
-
 }
 
 public class TestComparatorEx {
@@ -65,12 +59,10 @@ public class TestComparatorEx {
 		// 정렬
 		// 정렬 후
 		System.out.println("정렬 후");
-		userList.stream().sorted(
-			(o1, o2) -> {
-				int age = o2.getAge() - o1.getAge();
-				int name = o1.getName().compareTo(o2.getName());
-				return age == 0 ? name : age ;
-			}
-		).forEach(user -> System.out.println(user));
+		userList.stream().sorted((o1, o2) -> {
+			int age  = o2.getAge() - o1.getAge();
+			int name = o1.getName().compareTo(o2.getName());
+			return age == 0 ? name : age;
+		}).forEach(user -> System.out.println(user));
 	}
 }

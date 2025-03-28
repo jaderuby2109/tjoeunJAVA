@@ -28,8 +28,8 @@ public class MainTest {
 		// Student 객체 생성 - 매개변수가 있는 생성자
 		Student student4 = new Student("김별님", 25);
 		student4.printInfo("학생4");
-		
-		int scores4[] = {100,80,70,65,95};
+
+		int scores4[] = {100, 80, 70, 65, 95};
 		System.out.println("학생4 - 중간고사 점수 : " + student.getAverage(100, 90, 70));
 		System.out.println("학생4 - 중간고사 점수 : " + student.getAverage(scores4));
 	}

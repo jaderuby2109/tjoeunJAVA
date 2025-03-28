@@ -12,19 +12,19 @@ public class DecimalFormatEx {
 		double num = 1234.5678;
 
 		// 숫자 형식 패턴 기호
-		// 0		: 10 진수를 표기, 빈자리를 0으로 채움
-		// #		: 10 진수를 표기, 빈자리를 채우지 않음
-		// ,		: 단위 구분
-		// .		: 소수점
-		// %		: 100을 곱하고 % 표기 (백분율)
-		// \u00A4	: \(원화표시)
+		// 0 : 10 진수를 표기, 빈자리를 0으로 채움
+		// # : 10 진수를 표기, 빈자리를 채우지 않음
+		// , : 단위 구분
+		// . : 소수점
+		// % : 100을 곱하고 % 표기 (백분율)
+		// \u00A4 : \(원화표시)
 
 		DecimalFormat df = new DecimalFormat("0");
 		System.out.println(df.format(num));
 
 		df = new DecimalFormat("00000.00");
 		System.out.println(df.format(num));
-		
+
 		df = new DecimalFormat("00000.00000");
 		System.out.println(df.format(num));
 

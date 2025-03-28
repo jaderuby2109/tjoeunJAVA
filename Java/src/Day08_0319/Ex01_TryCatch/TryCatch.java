@@ -14,19 +14,13 @@ public class TryCatch {
 		sc.close();
 
 		try {
-
 			int result = a / b;
 			System.out.println("result : " + result);
-
 		} catch (Exception e) {
-
 			System.out.println("예외발생");
 			System.out.println("0으로 나눌 수 없습니다.");
-
 		} finally {
 			System.out.println("예외 처리 완료");
-
 		}
-
 	}
 }

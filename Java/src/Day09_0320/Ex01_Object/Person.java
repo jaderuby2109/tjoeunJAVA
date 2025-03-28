@@ -19,12 +19,10 @@ class Person implements Cloneable {
 	@Override
 	public boolean equals(Object obj) {
 		// 인스턴스 자체가 같은가
-		if (this == obj)
-			return true;
+		if (this == obj) return true;
 
 		// 클래스 타입이 같은가
-		if (obj == null || getClass() != obj.getClass())
-			return false;
+		if (obj == null || getClass() != obj.getClass()) return false;
 
 		Person person = (Person) obj;
 		// 나이와 이름이 같으면 같은 객체로 판단

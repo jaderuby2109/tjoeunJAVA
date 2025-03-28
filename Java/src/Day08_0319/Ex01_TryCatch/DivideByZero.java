@@ -11,9 +11,14 @@ public class DivideByZero {
 		System.out.print("b : ");
 		int b = sc.nextInt();
 
+		sc.close();
+
 		// 예외 메세지	: java.lang.ArithmeticException: / by zero
 		// 예외 상황	: 어떤 수를 0으로 나누는 경우는 수학적으로 정의되지 않아서 예외
+		// 예외 처리	: try ~ catch
+		// try : ctrl + space
 		try {
+			// 예외 발생 가능성이 있는 문장
 			System.out.println("a / b = " + (a / b));
 		}
 		// catch (예외타입 객체) { }
@@ -27,7 +32,6 @@ public class DivideByZero {
 			// 예외 상황과 무관하게 실행하는 문장
 			// * 주로 예외 처리와 관련된 문장을 작성 (자원 해제 등)
 			System.out.println("메모리를 해제합니다.");
-			sc.close();
 		}
 
 		System.out.println("프로그램을 종료합니다.");

@@ -16,11 +16,11 @@ public class MathEx {
 		// 로또 번호
 		// Math.random()			: 0.0 보다 크거나 같고 1.0 보다 작은 임의의 실수
 		// Math.random()			: 0.0xxx~0.9xxx
-		// (0.0xxx~0.9xxx) * 10		: 0.xxx~9.xxx		(0 ~ 9) 	- 10개
-		// (0.0xxx~0.9xxx) * 20		: 0.xxx~19.xxx		(0 ~ 19) 	- 20개
-		// (0.0xxx~0.9xxx) * 45		: 0.xxx~44.xxx		(0 ~ 44) 	- 45개
-		// (0.0xxx~0.9xxx) * 45 + 1	: 1.xxx~45.xxx		(1 ~ 45) 	
-		// (int)(Math.random() * 45 + 1)	: 1~45
+		// (0.0xxx~0.9xxx) * 10		: 0.xxx~9.xxx (0 ~ 9) - 10개
+		// (0.0xxx~0.9xxx) * 20		: 0.xxx~19.xxx (0 ~ 19) - 20개
+		// (0.0xxx~0.9xxx) * 45		: 0.xxx~44.xxx (0 ~ 44) - 45개
+		// (0.0xxx~0.9xxx) * 45 + 1 : 1.xxx~45.xxx (1 ~ 45)
+		// (int)(Math.random() * 45 + 1) : 1~45
 
 		// [공식]
 		// (int)(Math.random() * [개수] + [시작숫자])
@@ -59,18 +59,17 @@ public class MathEx {
 		System.out.println("-----------------------------");
 
 		// 최댓값
-		double[] arr = { 90.22, 12.45, 33.22, 88.12, 70.45 };
+		double[] arr = {90.22, 12.45, 33.22, 88.12, 70.45};
 
 		double max = Double.MIN_VALUE;
 
 		for (int i = 0; i < arr.length; i++) {
-			//			if( max < arr[i] )
-			//				max = arr[i];
-			max = Math.max(max, arr[i]);		// 두 인자 중 큰 값을 반환
+			// if( max < arr[i] )
+			// max = arr[i];
+			// 두 인자 중 큰 값을 반환
+			max = Math.max(max, arr[i]);
 		}
 
 		System.out.println("최댓값 max : " + max);
-
 	}
-
 }

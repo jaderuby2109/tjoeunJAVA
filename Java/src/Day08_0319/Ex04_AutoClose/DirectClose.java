@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
 /**
- * test.txt 파일을 입력받아 텍스트 파일의 내용을 출력하는 프로그램 
+ * test.txt 파일을 입력받아 텍스트 파일의 내용을 출력하는 프로그램
  */
 public class DirectClose {
 
@@ -27,21 +27,20 @@ public class DirectClose {
 			while ((read = in.read()) != -1) {
 				System.out.print((char) read);
 			}
+
 		} catch (FileNotFoundException e) {
-			// FileNotFoundException		: 파일 없음
+			// 파일 없음
 			System.out.println("파일을 찾을 수 없습니다.");
-			System.out.println(e.getMessage());
 			e.printStackTrace();
 		} catch (UnsupportedEncodingException e) {
-			// UnsupportedEncodingException	: 인코딩 에러
+			// 인코딩 에러
 			System.out.println("지원하지 않는 인코딩 타입 입니다.");
-			System.out.println(e.getMessage());
 			e.printStackTrace();
 		} catch (IOException e) {
-			// IOException					: 파일 입출력 에러
+			// 파일 입출력 에러
 			System.out.println("파일 입출력에 관련된 예외가 발생했습니다.");
-			System.out.println(e.getMessage());
 			e.printStackTrace();
+
 		} finally {
 			if (in != null) {
 				try {
@@ -59,6 +58,5 @@ public class DirectClose {
 			}
 		}
 		// End try
-
 	}
 }

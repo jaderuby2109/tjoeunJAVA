@@ -5,6 +5,7 @@ public class Student extends Person {
 	int    grade;
 	String major;
 
+	// 생성자
 	public Student() {
 		this("이름없음", 1, 1, "없음");
 	}
@@ -43,5 +44,4 @@ public class Student extends Person {
 	public String toString() {
 		return "Student [grade=" + grade + ", major=" + major + "]";
 	}
-
 }

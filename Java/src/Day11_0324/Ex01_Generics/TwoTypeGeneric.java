@@ -2,6 +2,7 @@ package Day11_0324.Ex01_Generics;
 
 // 제네릭 기법으로 타입 매개변수 2개 지정
 class KeyValue<K, V> {
+
 	private K key;
 	private V value;
 
@@ -30,17 +31,18 @@ public class TwoTypeGeneric {
 		// - 객체 생성하는 클래스명 뒤의 타입은 생략가능
 		// - new 클래스<>();
 
-		KeyValue<String, Integer> kv = new KeyValue<String, Integer>();
-		//		KeyValue<String, Integer> kv = new KeyValue<>();
-		kv.setKey("Java");
-		kv.setValue(100);
+		KeyValue<String, Integer> kv1 = new KeyValue<String, Integer>();
+		// KeyValue<String, Integer> kv1 = new KeyValue<>();
+		kv1.setKey("Java");
+		kv1.setValue(100);
 
-		KeyValue<Integer, String> kv2 = new KeyValue<>();
+		// 대입절의 <>는 생략가능
+		KeyValue<Integer, String> kv2 = new KeyValue();
 		kv2.setKey(1002);
 		kv2.setValue("Java2");
 
-		System.out.println("kv - key\t: " + kv.getKey());
-		System.out.println("kv - value\t: " + kv.getValue());
+		System.out.println("kv1 - key\t: " + kv1.getKey());
+		System.out.println("kv1 - value\t: " + kv1.getValue());
 		System.out.println("kv2 - key\t: " + kv2.getKey());
 		System.out.println("kv2 - key\t: " + kv2.getValue());
 

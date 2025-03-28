@@ -3,10 +3,10 @@ package Day06_0317.Ex03_중첩클래스;
 public class NestedClass2 {
 	public static void main(String[] args) {
 		// X
-		// - Y	: 인스턴스 이너 클래스
-		// - Z	: static 이너 클래스
+		// - Y : 인스턴스 이너 클래스
+		// - Z : static 이너 클래스
 		// * method
-		// - L	: 로컬 클래스
+		// - L : 로컬 클래스
 
 		X x = new X();
 		X.xStatic = 4;

@@ -15,14 +15,14 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("검색할 컨텐츠 : ");
-		String key = sc.nextLine();
+		String keyword = sc.nextLine();
 		sc.close();
 
-		String[] content = tv.contentSearch(key);
+		String[] content = tv.contentSearch(keyword);
 
 		for (int i = 0; i < content.length; i++) {
 			System.out.print(content[i]);
-			if (i < content.length - 1)
+			if (i < content.length - 1) 
 				System.out.print(", ");
 		}
 

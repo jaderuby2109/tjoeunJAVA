@@ -51,10 +51,7 @@ public class LottoArray {
 				System.out.print(lotto[j] + " ");
 
 			}
-
 			System.out.println();
-
 		}
-
 	}
 }

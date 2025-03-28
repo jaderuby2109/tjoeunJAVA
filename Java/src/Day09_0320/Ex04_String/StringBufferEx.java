@@ -32,9 +32,8 @@ public class StringBufferEx {
 		System.out.println(sb);
 
 		// 문자열 길이 지정
-		// setLength(길이)		: 문자열의 길이를 지정하는 메소드
+		// setLength(길이) : 문자열의 길이를 지정하는 메소드
 		sb.setLength(4);
 		System.out.println(sb);
 	}
-
 }

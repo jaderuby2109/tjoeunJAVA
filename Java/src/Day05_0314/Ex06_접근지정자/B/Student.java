@@ -14,10 +14,10 @@ public class Student extends Person {
 
 	// 메소드
 	public void defaultSetting() {
-		name = "이름없음";		// public		모든 곳에서 접근 가능
-		age  = 20;				// protected	다른 패키지 이지만 상속 받아서 접근 가능
-		// height = 170;		// default		같은 패키지가 아니라서 접근 불가
-		// weight = 60;			// private		해당 클래스에서만 접근 가능
+		name = "이름없음";			// public 모든 곳에서 접근 가능
+		age  = 20;				// protected 다른 패키지 이지만 상속 받아서 접근 가능
+		// height = 170; 		// default 같은 패키지가 아니라서 접근 불가
+		// weight = 60; 		// private 해당 클래스에서만 접근 가능
 		setHeight(170);
 		setWeight(60);
 	}

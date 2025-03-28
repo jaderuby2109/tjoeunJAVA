@@ -89,8 +89,8 @@ public class Ex08_Todo {
 				System.err.println("프로그램 종료");
 				break;
 			}
-			switch(menuNo) {
-				case 1:	// 할 일 추가
+			switch (menuNo) {
+				case 1 :	// 할 일 추가
 
 					System.out.print("할 일 : ");
 					String name = sc.nextLine();
@@ -106,10 +106,10 @@ public class Ex08_Todo {
 					System.out.println();
 
 					break;
-				case 2:	// 할 일 목록
+				case 2 :	// 할 일 목록
 					printTodoList(todoList, count);
 					break;
-				case 3: // 상태 변경
+				case 3 : // 상태 변경
 					// 할 일 목록
 					printTodoList(todoList, count);
 
@@ -146,7 +146,7 @@ public class Ex08_Todo {
 					printTodoList(todoList, count);
 
 					break;
-				default:
+				default :
 					System.out.println("0~3사이의 올바른 번호로 입력하세요.");
 					break;
 			}
