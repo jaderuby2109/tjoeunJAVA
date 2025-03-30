@@ -1,4 +1,4 @@
-package Chapter015.stream.inputstream;
+package Chapter015.stream.Ex01_inputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 

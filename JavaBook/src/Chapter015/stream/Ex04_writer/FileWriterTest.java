@@ -1,4 +1,4 @@
-package Chapter015.stream.writer;
+package Chapter015.stream.Ex04_writer;
 
 import java.io.FileWriter;
 import java.io.IOException;

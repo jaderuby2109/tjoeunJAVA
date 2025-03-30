@@ -1,4 +1,4 @@
-package Chapter015.stream.reader;
+package Chapter015.stream.Ex03_reader;
 
 import java.io.FileReader;
 import java.io.IOException;
