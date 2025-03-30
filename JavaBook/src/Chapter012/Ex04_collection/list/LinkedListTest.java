@@ -31,6 +31,5 @@ public class LinkedListTest {
 
 		System.out.println("--- 삭제 후 ---");
 		System.out.println(myList);
-
 	}
 }
