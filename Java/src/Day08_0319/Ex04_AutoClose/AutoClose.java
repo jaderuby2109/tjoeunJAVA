@@ -18,7 +18,9 @@ public class AutoClose {
 		// : finally 구문에서 close() 하지 않아도, 자동으로 자원 해제 해준다.
 		// * AutoClosable 인터페이스를 구현한 클래스이어야 자동으로 자원 해제 가능
 		// 자동 해제 코드
-		try (FileInputStream fis2 = new FileInputStream("test.txt");
+		String fileName = "./src/Day08_0319/Ex04_AutoClose/test.txt";
+		
+		try (FileInputStream fis2 = new FileInputStream(fileName);
 				InputStreamReader in2 = new InputStreamReader(fis2, "UTF-8");) {
 
 			int read = 0;

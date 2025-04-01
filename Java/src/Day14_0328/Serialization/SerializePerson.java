@@ -20,8 +20,10 @@ public class SerializePerson {
 		// Person 객체 직렬화
 		// : 객체를 바이트 데이터로 변환하여 파일로 저장
 
+		String filePath = "./src/Day14_0328/Serialization/Person.dat";
+		
 		try (// Person.dat 파일을 생성하고 파일 출력 스트림을 생성
-				FileOutputStream fos = new FileOutputStream("Person.dat");
+				FileOutputStream fos = new FileOutputStream(filePath);
 				// 객체를 직렬화하여 파일에 저장할 수 있도록 객체 스트림을 생성
 				ObjectOutputStream oos = new ObjectOutputStream(fos);
 		) {

@@ -5,8 +5,10 @@ import java.io.ObjectInputStream;
 
 public class DeserializePerson {
 	public static void main(String[] args) {
+		String filePath = "./src/Day14_0328/Serialization/Person.dat";
+		
 		try (// Person.dat 파일을 읽기 위한 파일 입력 스트림을 생성
-				FileInputStream fis = new FileInputStream("Person.dat");
+				FileInputStream fis = new FileInputStream(filePath);
 
 				// 파일에서 객체를 읽어오기 위한 객체 스트림 생성
 				ObjectInputStream ois = new ObjectInputStream(fis);
