@@ -1,0 +1,9 @@
+CREATE TABLE `board` (
+   `no` int NOT NULL AUTO_INCREMENT COMMENT '게시글 번호',
+   `title` varchar(100) NOT NULL COMMENT '제목',
+   `writer` varchar(100) NOT NULL COMMENT '작성자',
+   `content` text COMMENT '내용',
+   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '등록일자',
+   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '수정일자',
+   PRIMARY KEY (`no`)
+ ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='게시판'
